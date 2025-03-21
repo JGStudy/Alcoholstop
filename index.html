@@ -20,6 +20,186 @@
 
         <header id="header">
             <!-- 헤더 내용 작성 -->
+            <!-- 하연 파트 -->
+            <!-- 1. 햄버거바 클릭 전 -->
+            <!-- 1) button 클릭 시 visibility: hidden -->
+            <button type="button" class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <span class="blind">hamberger menu</span>
+            </button>
+            <!-- 2. 햄버거바 클릭 후 -->
+            <section id="menuAll" class="header__burger">
+                <!-- 1) X버튼으로 변경 -->
+                <button type="button" class="burger-x">
+                    <i class="fa-solid fa-x"></i>
+                    <span class="blind">hamberger menu</span>
+                </button>
+                <!-- 전체 메뉴 -->
+                <div class="burger__wrap">
+                    <nav class="burger__nav">
+                        <!-- 1. gnb 사업 메뉴 1depth -->
+                        <ul class="nav__gnb">
+                            <li class="gnb__item">
+                                <a href="#">사업</a>
+                                <!-- 1) lnb 모니터링 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">모니터링</a>
+                                        <!--lnb 하위 메뉴 3depth -->
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">소개</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">모니터링 가이드</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 2) lnb 홍보캠페인 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">홍보캠페인</a>
+                                        <!--lnb 하위 메뉴 3depth -->
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">소개</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">연도별 캠페인</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 3) lnb 교육 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">교육</a>
+                                        <!--lnb 하위 메뉴 3depth -->
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">소개</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">대국민교육</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">대국민교육</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">대국민교육 신청현황</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">대국민교육 평가</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">전문인력 교육</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">전문인력 실적 등록</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 4) lnb 서포터즈 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">서포터즈</a>
+                                        <!--lnb 하위 메뉴 3depth -->
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">소개</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item">
+                                                <a href="#">연도별 서포터즈</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 5) lnb 지역사회 음주폐해예방사업 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">지역사회 음주폐해예방사업</a>
+                                        <!--lnb 하위 메뉴 3depth -->
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">소개</a></li>
+                                        </ul>
+                                        <ul class="lnb-list">
+                                            <li class="list__item"><a href="#">우수사례</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 2. gnb 통계 메뉴 1depth -->
+                        <ul class="nav__gnb">
+                            <li class="gnb__item">
+                                <!-- 1) lnb 통계 메뉴 2depth -->
+                                <a href="#">통계</a>
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">통계</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 3. gnb 자료 메뉴 1depth -->
+                        <ul class="nav__gnb">
+                            <li class="gnb__item">
+                                <a href="#">자료</a>
+                                <!-- 1) lnb 영상 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">영상</a></li>
+                                </ul>
+                                <!-- 2) lnb 발간물 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">발간물</a></li>
+                                </ul>
+                                <!-- 3) lnb 정책 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">정책</a></li>
+                                </ul>
+                                <!-- 4) lnb 건강 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">건강</a></li>
+                                </ul>
+                                <!-- 5) lnb 절주서포터즈 활동 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item">
+                                        <a href="#">절주서포터즈 활동</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 4. gnb 알림 메뉴 1depth -->
+                        <ul class="nav__gnb">
+                            <li class="gnb__item">
+                                <a href="#">알림</a>
+                                <!-- 1) lnb 공지사항&소식 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">공지사항&소식</a></li>
+                                </ul>
+                                <!-- 2) lnb 언론보도 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">언론보도</a></li>
+                                </ul>
+                                <!-- 3) lnb FAQ 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">FAQ</a></li>
+                                </ul>
+                                <!-- 4) lnb Q&A 메뉴 2depth -->
+                                <ul class="nav__lnb">
+                                    <li class="lnb__item"><a href="#">Q&A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
         </header>
 
         <main id="main">
