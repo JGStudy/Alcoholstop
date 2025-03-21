@@ -1,0 +1,50 @@
+/* CSS 기본 리셋 */
+
+/* 1. margin paddin 기본값 제거하고 border-box 적용 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. 텍스트 줄 간격(line-height) 통일, 폰트 arial 사용 (없을 시 sans-serif로 대체) */
+body {
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 3. 기본 리스트 스타일 (ul은 동그라미, ol은 숫자) 해제 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 4. a태그 기본 밑줄 제거, 색상은 부모 요소 상속 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. 버튼 태그 기본 디자인 제거, 커서는 pointor 지정 (클릭 가능해보이게) */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* 6. 이미지 부모 요소보다 커지지 안ㄶ게  */
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* 공통 레이아웃 */
+
+#header,
+#main,
+#footer {
+  /* body의 너비 전체 차지 */
+  width: 100%;
+  /* 각 파트의 자식요소가 position: absolute라면, 해당 자식요소의 위치 기준이 됨 */
+  position: relative;
+}
