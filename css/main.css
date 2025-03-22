@@ -1,0 +1,18 @@
+/* 려린 파트 */
+/* center */
+
+.box {
+  text-align: center;
+  border: 7px solid gray;
+}
+.box img {
+  display: block;
+  margin: 0 auto;
+}
+
+.character {
+  background-image: url('/assets/images/campaign_character.png');
+  height: 272px;
+  width: 100px;
+  background-size: contain;
+}
