@@ -1,6 +1,5 @@
 name: 📝 작업 이슈
 description: 새로운 브랜치를 생성할 작업 단위가 있을 때 작성해주세요.
-title: '[Task] '
 labels: []
 assignees: []
 
@@ -17,9 +16,9 @@ body:
   - type: textarea
     id: checklist
     attributes:
-      label: ✅ 작업 항목
+      label: ✅ 작업 세부
       description: 어떤 세부 작업이 필요한가요?
       placeholder: |
-        - [ ] 세부 작업1
+        - 세부 작업1
     validations:
       required: false
