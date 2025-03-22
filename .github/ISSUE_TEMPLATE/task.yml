@@ -1,11 +1,10 @@
 name: 📝 작업 이슈
 description: 새로운 브랜치를 생성할 작업 단위가 있을 때 작성해주세요.
-title: "[Task] "
+title: '[Task] '
 labels: []
 assignees: []
 
 body:
-
   - type: textarea
     id: description
     attributes:
