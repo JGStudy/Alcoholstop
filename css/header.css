@@ -1,0 +1,118 @@
+/* 하연 파트 */
+.blind {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+#menuAll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  /* visibility: hidden;
+    opacity: 0; */
+  z-index: 1010;
+  transition: all 0.3s ease-in-out;
+}
+
+#menuAll.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.burger {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  /* 윤민 css 참고 예정 */
+}
+
+.burger-x {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+}
+
+.burger-x i {
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.burger__wrap {
+  display: block;
+  margin-top: 66px;
+}
+
+.burger__nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 1440px;
+}
+
+.burger__nav .nav__gnb {
+  flex: 1;
+}
+
+.burger__nav a {
+  display: block;
+}
+
+.nav__gnb .gnb__item > a {
+  cursor: default;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+  padding: 0.8rem 1rem;
+}
+
+.nav__lnb .lnb__item > a {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.nav__lnb .lnb__item > a:hover {
+  background-color: #e01f27;
+  color: #fff;
+}
+
+.lnb-list {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.lnb-list .list__item::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 2px;
+  margin-left: -0.5rem;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e01f27;
+}
+
+.lnb-list .list__item {
+  color: #757575;
+  padding: 0.1rem 1rem;
+}
+
+.lnb-list .list__item:hover {
+  color: #e01f27;
+  text-decoration-line: underline;
+}
+
+/* transition 다 안 넣음*/
