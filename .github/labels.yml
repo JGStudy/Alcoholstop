@@ -1,0 +1,27 @@
+- name: '🐛 bugfix'
+  color: 'd73a4a'
+  description: '버그 픽스'
+
+- name: '✨ feature'
+  color: '0E8A16'
+  description: '새로운 기능 추가'
+
+- name: '🔁 refactor'
+  color: 'c2e0c6'
+  description: '리팩토링 작업'
+
+- name: '📄 documentation'
+  color: '0075ca'
+  description: '문서 관련 작업'
+
+- name: '💬 question'
+  color: 'd876e3'
+  description: '논의/질문'
+
+- name: '🎨 design'
+  color: 'ffb3c6'
+  description: 'UI/UX 관련 작업'
+
+- name: '🧪 test'
+  color: 'f9d0c4'
+  description: '테스트 코드 또는 테스트 관련 작업'
