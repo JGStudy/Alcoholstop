@@ -27,4 +27,4 @@ insta.onclick = () => {
   window.open("https://www.instagram.com/alcohol__stop/", "_blank");
 };
 
-//혜련 js 끝
+//혜련 끝
