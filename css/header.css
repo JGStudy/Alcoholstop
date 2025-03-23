@@ -19,11 +19,12 @@
   width: 100%;
   height: 100%;
   /* visibility: hidden;
-    opacity: 0; */
+  opacity: 0; */
   z-index: 1010;
   transition: all 0.3s ease-in-out;
 }
 
+/* js로 open 추가 */
 #menuAll.open {
   visibility: visible;
   opacity: 1;
@@ -36,31 +37,43 @@
   /* 윤민 css 참고 예정 */
 }
 
+.menu__toggle-close {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
 .burger-x {
   border: none;
   outline: none;
   background-color: inherit;
-  position: absolute;
-  top: 1rem;
-  right: 10rem;
 }
 
 .burger-x i {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-x i:hover {
+  transform: rotate(180deg);
 }
 
 .burger__wrap {
-  display: block;
-  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .burger__nav {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  max-width: 1440px;
+  overflow-y: auto;
+  width: 100%;
 }
 
 .burger__nav .nav__gnb {
@@ -73,8 +86,7 @@
 
 .nav__gnb .gnb__item > a {
   cursor: default;
-  font-size: 1.5rem;
-  /* font-weight: 500; */
+  font-weight: 700;
   padding: 0.8rem 1rem;
 }
 
@@ -95,7 +107,7 @@
 
 .lnb-list .list__item::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 2px;
   margin-left: -0.5rem;
@@ -114,5 +126,3 @@
   color: #e01f27;
   text-decoration-line: underline;
 }
-
-/* transition 다 안 넣음*/
