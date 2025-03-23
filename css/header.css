@@ -1,3 +1,105 @@
+/* 혜련 CSS시작 */
+/* 헤더 전체 스타일 */
+.header_top {
+  display: flex;
+  padding: 0.5% 10%;
+  justify-content: space-between;
+  background: #e3eff9;
+  border-bottom: 1px solid #ccc;
+}
+.header_top button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*화살표 가상요소*/
+.select_btn span::after {
+  content: "▲";
+  margin-left: 70px;
+  font-size: 12px;
+}
+.select_btn span {
+  white-space: nowrap; /*두 줄로 되는거 방지*/
+}
+
+.top_link {
+  display: flex;
+  position: relative;
+  gap: 50px;
+}
+.top_link button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* 토글된 요소 보이기 */
+.top_instit {
+  display: none;
+  position: absolute;
+  background: white;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.sns {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: white;
+  margin-top: 7px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* 아이콘 가로정렬 */
+.sns ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sns_icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+/* 각각 아이콘 배경 지정 */
+.sns_icon--facebook {
+  background-image: url("../assets/images/facebook.png");
+}
+.sns_icon--instagram {
+  background-image: url("../assets/images/instagram.png");
+}
+.sns_icon--youtube {
+  background-image: url("../assets/images/youtube.png");
+}
+.sns_icon--blog {
+  background-image: url("../assets/images/blog.png");
+}
+/* 커서가 왔을 때 효과주기*/
+.top_instit ul li:hover {
+  color: rgba(5, 5, 134, 0.747);
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 166, 0, 0.884);
+}
+
+/* 토글 활성화 시 보이도록 설정 */
+.top_instit.active,
+.sns.active {
+  display: block;
+}
+/* 혜련 CSS끝 */
+
 /* 하연 파트 */
 .blind {
   visibility: hidden;
