@@ -148,15 +148,18 @@
   border: none;
   outline: none;
   background-color: inherit;
-}
-
-.burger-x i {
-  font-weight: 100;
-  font-size: 2rem;
   transition: transform 0.3s ease-in-out;
 }
 
-.burger-x i:hover {
+.burger-x::before {
+  display: block;
+  content: "\e9af";
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.burger-x:hover {
   transform: rotate(180deg);
 }
 
@@ -317,10 +320,18 @@
 }
 
 .menu-toggle {
-  background: none;
   border: none;
-  font-size: 1.5em;
+  outline: none;
+  background-color: inherit;
   cursor: pointer;
+}
+
+.menu-toggle::before {
+  display: block;
+  content: "\e91c";
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
