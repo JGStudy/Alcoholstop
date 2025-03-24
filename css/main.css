@@ -36,8 +36,10 @@ body {
 /* 상은 파트 */
 #main {
   background-color: #dae9f5;
-  width: 98%;
+  /* width: 98%; */
+  width: 1500px; /*추가*/
   display: flex;
+  justify-content: space-around; /*추가*/
   gap: 1rem;
 }
 
@@ -305,7 +307,7 @@ body {
 
 /* 주요사업 영역*/
 .business {
-  background-color: #007cb4;
+  background-color: #0683b7;
   border-radius: 20px;
   padding: 25px;
   box-sizing: border-box;
