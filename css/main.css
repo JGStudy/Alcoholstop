@@ -38,12 +38,6 @@
   display: block;
 }
 
-.main_right {
-  width: 34%;
-  display: block;
-  text-align: center;
-}
-
 .main_latest-data {
   background-color: white;
   height: 403px;
@@ -122,4 +116,168 @@
 
 .main_subject > span {
   display: block;
+}
+
+/* 윤지 파트 */
+/* 소통 영역 */
+.main_right {
+  width: 34%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.communication {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 17px;
+  box-sizing: border-box;
+  height: auto;
+  overflow: hidden;
+}
+
+.communication__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.communication__icon {
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  margin-right: 15px;
+  background-image: url('https://www.khepi.or.kr/resources/images/acs/new_main/blue_comma.png');
+  background-size: cover;
+  vertical-align: middle;
+}
+
+/* 탭 영역 */
+.communication__tabs {
+  /* border-bottom: 1px solid #ddd; */
+  margin-bottom: 1rem;
+}
+
+.communication__tabs-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.communication__tabs-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  color: #333;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+}
+
+.communication__tabs-item--active {
+  color: #1c73e8;
+  font-weight: 600;
+  border-bottom: 2px solid #1c73e8;
+}
+
+.communication__tabs-item--more {
+  margin-left: auto;
+}
+
+/* 콘텐츠 영역 */
+.communication__content {
+  margin-top: 1rem;
+}
+
+/* 대표 뉴스 */
+.communication__main-news {
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.communication__headline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.communication__desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.communication__date {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+/* 서브 뉴스 s리스트 */
+.communication__sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.communication__sub-item {
+  border-top: 1px dashed #ddd;
+  padding-top: 0.5rem;
+}
+
+.communication__sub-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* 주요사업 영역*/
+.business {
+  background-color: #007cb4;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.business__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.business__item {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.business__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.business__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.business__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
 }
