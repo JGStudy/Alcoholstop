@@ -27,3 +27,12 @@ insta.onclick = () => {
 };
 
 //혜련 js 끝
+
+// js 하연 파트 start
+const burgerButton = document.querySelector(".menu-toggle");
+const burgerButtonX = document.querySelector(".burger-x");
+const menuAll = document.getElementById("menuAll");
+
+burgerButton.addEventListener("click", () => menuAll.classList.toggle("open"));
+burgerButtonX.addEventListener("click", () => menuAll.classList.toggle("open"));
+// js 하연 파트 end
