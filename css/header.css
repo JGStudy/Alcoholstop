@@ -100,7 +100,7 @@
 }
 /* 혜련 CSS끝 */
 
-/* 하연 파트 */
+/* 하연 파트 start */
 .blind {
   visibility: hidden;
   overflow: hidden;
@@ -120,13 +120,13 @@
   background-color: #fff;
   width: 100%;
   height: 100%;
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   z-index: 1010;
   transition: all 0.3s ease-in-out;
 }
 
-/* js로 open 추가 */
+/* js 클릭 이벤트 */
 #menuAll.open {
   visibility: visible;
   opacity: 1;
@@ -184,6 +184,7 @@
 
 .burger__nav a {
   display: block;
+  position: relative;
 }
 
 .nav__gnb .gnb__item > a {
@@ -192,9 +193,25 @@
   padding: 0.8rem 1rem;
 }
 
+.nav__gnb .gnb__item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0;
+  height: 2.5px;
+  background-color: #5f7193;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav__gnb .gnb__item > a:hover::after {
+  width: 60%;
+}
+
 .nav__lnb .lnb__item > a {
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
+  transition: all 0.25s ease-in-out;
 }
 
 .nav__lnb .lnb__item > a:hover {
@@ -228,3 +245,4 @@
   color: #e01f27;
   text-decoration-line: underline;
 }
+/* 하연 파트 end*/
