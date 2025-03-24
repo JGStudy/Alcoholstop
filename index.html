@@ -1,643 +1,508 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>절주온</title>
-    <!-- fontawesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!-- font CSS -->
-    <link
-      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
-      rel="stylesheet"
-    />
-    <!-- 공통 CSS -->
-    <link rel="stylesheet" href="./css/common.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>절주온</title>
+  <!-- fontawesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- 각 파트별 CSS -->
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+  <!-- font CSS -->
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet" />
 
-    <!-- 각 파트별 js -->
-    <script src="./js/header.js" defer></script>
-    <script src="./js/footer.js" defer></script>
-    <script src="./js/main.js" defer></script>
-  </head>
+  <!-- 공통 CSS -->
+  <link rel="stylesheet" href="./css/common.css" />
+  <!-- 각 파트별 CSS -->
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 
-  <body>
-    <div class="wrap">
-      <header id="header">
-        <!-- 헤더 내용 작성 -->
-        <!-- 혜련 파트 시작 -->
-        <div class="header_top">
-          <div class="top_service">
-            <div class="wrap_con">
-              <button
-                type="button"
-                class="select_btn tsidemenu_btn active"
-                title="사이트바로가기 닫기"
-              >
-                <span>절주온(ON)</span>
-              </button>
-              <div class="top_instit">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.khepi.or.kr/ace/hfwp"
-                      target="_blank"
-                      title="새창으로 열림"
-                      >건강친화기업인증제도</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/khpf" target="_blank" title="새창으로 열림"
-                      >국민건강스마트관리R&D</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/healthplan" target="_blank" title="새창으로 열림"
-                      >국민건강증진종합계획</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://nosmk.khealth.or.kr/nsk"
-                      target="_blank"
-                      title="새창으로 열림"
-                      >금연두드림</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.khepi.or.kr/ace/psp"
-                      target="_blank"
-                      title="새창으로 열림"
-                      >민간보조사업 성과평가</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/khe" target="_blank" title="새창으로 열림"
-                      >보건교육사자격관리시스템</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://lms.khepi.or.kr"
-                      target="_blank"
-                      title="새창으로 열림"
-                      >온라인 금연교육센터</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.nutriplus.or.kr/"
-                      target="_blank"
-                      title="새창으로 열림"
-                      >영양플러스 온라인 영양교육센터</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/ncd" target="_blank" title="새창으로 열림"
-                      >일차의료 만성질환관리 사업</a
-                    >
-                  </li>
-                  <li id="on">
-                    <a href="/alcoholstop" target="_blank" title="새창으로 열림"
-                      >절주온(ON)</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/kps" target="_blank" title="새창으로 열림"
-                      >한국건강증진개발원 대표</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="top_link">
-            <button class="top_sns">대표 SNS</button>
-            <div class="sns">
+  <!-- 각 파트별 js -->
+  <script src="./js/header.js" defer></script>
+  <script src="./js/footer.js" defer></script>
+  <script src="./js/main.js" defer></script>
+
+  <!-- 상은 부분 icon css -->
+  <link rel="stylesheet" href="css/xeicon.min.css" />
+
+</head>
+
+<body>
+  <div class="wrap">
+    <header id="header">
+      <!-- 헤더 내용 작성 -->
+      <!-- 혜련 파트 시작 -->
+      <div class="header_top">
+        <div class="top_service">
+          <div class="wrap_con">
+            <button type="button" class="select_btn tsidemenu_btn active" title="사이트바로가기 닫기">
+              <span>절주온(ON)</span>
+            </button>
+            <div class="top_instit">
               <ul>
-                <li>
-                  <a
-                    href="https://facebook.com"
-                    class="sns_icon sns_icon--facebook"
-                    target="_blank"
-                    title="페이스북 - 새창으로 열림"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com"
-                    class="sns_icon sns_icon--instagram"
-                    target="_blank"
-                    title="인스타그램 - 새창으로 열림"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://youtube.com"
-                    class="sns_icon sns_icon--youtube"
-                    target="_blank"
-                    title="유튜브 - 새창으로 열림"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://blog.naver.com"
-                    class="sns_icon sns_icon--blog"
-                    target="_blank"
-                    title="블로그 - 새창으로 열림"
-                  ></a>
-                </li>
+                <li><a href="https://www.khepi.or.kr/ace/hfwp" target="_blank" title="새창으로 열림">건강친화기업인증제도</a></li>
+                <li><a href="/khpf" target="_blank" title="새창으로 열림">국민건강스마트관리R&D</a></li>
+                <li><a href="/healthplan" target="_blank" title="새창으로 열림">국민건강증진종합계획</a></li>
+                <li><a href="https://nosmk.khealth.or.kr/nsk" target="_blank" title="새창으로 열림">금연두드림</a></li>
+                <li><a href="https://www.khepi.or.kr/ace/psp" target="_blank" title="새창으로 열림">민간보조사업 성과평가</a></li>
+                <li><a href="/khe" target="_blank" title="새창으로 열림">보건교육사자격관리시스템</a></li>
+                <li><a href="https://lms.khepi.or.kr" target="_blank" title="새창으로 열림">온라인 금연교육센터</a></li>
+                <li><a href="https://www.nutriplus.or.kr/" target="_blank" title="새창으로 열림">영양플러스 온라인 영양교육센터</a></li>
+                <li><a href="/ncd" target="_blank" title="새창으로 열림">일차의료 만성질환관리 사업</a></li>
+                <li id="on"><a href="/alcoholstop" target="_blank" title="새창으로 열림">절주온(ON)</a></li>
+                <li><a href="/kps" target="_blank" title="새창으로 열림">한국건강증진개발원 대표</a></li>
               </ul>
             </div>
-            <button class="restart_ampaign_insta">알콜스탑 캠페인</button>
           </div>
         </div>
-        <!-- 하연 파트 -->
-        <!-- 1. 햄버거바 클릭 전 -> 윤민이 버튼으로 수정 -->
-        <!-- 2. 햄버거바 클릭 후 -->
-        <section id="menuAll">
-          <!-- 전체 메뉴 -->
-          <div class="burger__wrap">
-            <!-- 1) X버튼으로 변경 -->
-            <div class="menu__toggle-close">
-              <button type="button" class="burger-x">
-                <i class="fa-solid fa-x"></i>
-                <span class="blind">hamberger menu</span>
-              </button>
-            </div>
-            <nav class="burger__nav">
-              <!-- 1. gnb 사업 메뉴 1depth -->
-              <ul class="nav__gnb">
-                <li class="gnb__item">
-                  <a href="#">사업</a>
-                  <!-- 1) lnb 모니터링 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">모니터링</a>
-                      <!--lnb 하위 메뉴 3depth -->
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">소개</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">모니터링 가이드</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!-- 2) lnb 홍보캠페인 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">홍보캠페인</a>
-                      <!--lnb 하위 메뉴 3depth -->
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">소개</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">연도별 캠페인</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!-- 3) lnb 교육 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">교육</a>
-                      <!--lnb 하위 메뉴 3depth -->
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">소개</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">대국민교육</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">대국민교육</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">대국민교육 신청현황</a>
-                        </li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">대국민교육 평가</a>
-                        </li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">전문인력 교육</a>
-                        </li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">전문인력 실적 등록</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!-- 4) lnb 서포터즈 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">서포터즈</a>
-                      <!--lnb 하위 메뉴 3depth -->
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">소개</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item">
-                          <a href="#">연도별 서포터즈</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!-- 5) lnb 지역사회 음주폐해예방사업 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">지역사회 음주폐해예방사업</a>
-                      <!--lnb 하위 메뉴 3depth -->
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">소개</a></li>
-                      </ul>
-                      <ul class="lnb-list">
-                        <li class="list__item"><a href="#">우수사례</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- 2. gnb 통계 메뉴 1depth -->
-              <ul class="nav__gnb">
-                <li class="gnb__item">
-                  <!-- 1) lnb 통계 메뉴 2depth -->
-                  <a href="#">통계</a>
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">통계</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- 3. gnb 자료 메뉴 1depth -->
-              <ul class="nav__gnb">
-                <li class="gnb__item">
-                  <a href="#">자료</a>
-                  <!-- 1) lnb 영상 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">영상</a></li>
-                  </ul>
-                  <!-- 2) lnb 발간물 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">발간물</a></li>
-                  </ul>
-                  <!-- 3) lnb 정책 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">정책</a></li>
-                  </ul>
-                  <!-- 4) lnb 건강 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">건강</a></li>
-                  </ul>
-                  <!-- 5) lnb 절주서포터즈 활동 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item">
-                      <a href="#">절주서포터즈 활동</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- 4. gnb 알림 메뉴 1depth -->
-              <ul class="nav__gnb">
-                <li class="gnb__item">
-                  <a href="#">알림</a>
-                  <!-- 1) lnb 공지사항&소식 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">공지사항&소식</a></li>
-                  </ul>
-                  <!-- 2) lnb 언론보도 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">언론보도</a></li>
-                  </ul>
-                  <!-- 3) lnb FAQ 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">FAQ</a></li>
-                  </ul>
-                  <!-- 4) lnb Q&A 메뉴 2depth -->
-                  <ul class="nav__lnb">
-                    <li class="lnb__item"><a href="#">Q&A</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-        <!-- 윤민 파트 -->
-        <div class="header-container">
-          <div class="logo">
-            <a href="https://www.khepi.or.kr/alcoholstop">
-              <img src="logo.png" alt="절주온 로고" />
-            </a>
-          </div>
-          <nav class="navigation">
+        <div class="top_link">
+          <button class="top_sns">대표 SNS</button>
+          <div class="sns">
             <ul>
               <li>
+                <a href="https://facebook.com" class="sns_icon sns_icon--facebook" target="_blank"
+                  title="페이스북 - 새창으로 열림"></a>
+              </li>
+              <li>
+                <a href="https://instagram.com" class="sns_icon sns_icon--instagram" target="_blank"
+                  title="인스타그램 - 새창으로 열림"></a>
+              </li>
+              <li>
+                <a href="https://youtube.com" class="sns_icon sns_icon--youtube" target="_blank"
+                  title="유튜브 - 새창으로 열림"></a>
+              </li>
+              <li>
+                <a href="https://blog.naver.com" class="sns_icon sns_icon--blog" target="_blank"
+                  title="블로그 - 새창으로 열림"></a>
+              </li>
+            </ul>
+          </div>
+          <button class="restart_ampaign_insta">알콜스탑 캠페인</button>
+        </div>
+      </div>
+      <!-- 하연 파트 -->
+      <!-- 1. 햄버거바 클릭 전 -> 윤민이 버튼으로 수정 -->
+      <!-- 2. 햄버거바 클릭 후 -->
+      <section id="menuAll" class="header__burger">
+        <!-- 전체 메뉴 -->
+        <div class="burger__wrap">
+          <!-- 1) X버튼으로 변경 -->
+          <div class="menu__toggle-close">
+            <button type="button" class="burger-x">
+              <i class="fa-solid fa-x"></i>
+              <span class="blind">hamberger menu</span>
+            </button>
+          </div>
+          <nav class="burger__nav">
+            <!-- 1. gnb 사업 메뉴 1depth -->
+            <ul class="nav__gnb">
+              <li class="gnb__item">
                 <a href="#">사업</a>
-                <div class="dropdown-content">
-                  <a href="#">모니터링</a>
-                  <a href="#">홍보캠페인</a>
-                  <a href="#">교육</a>
-                  <a href="#">서포터즈</a>
-                  <a href="#">지역사회 음주폐해예방사업</a>
-                </div>
+                <!-- 1) lnb 모니터링 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">모니터링</a>
+                    <!--lnb 하위 메뉴 3depth -->
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">모니터링 가이드</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- 2) lnb 홍보캠페인 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">홍보캠페인</a>
+                    <!--lnb 하위 메뉴 3depth -->
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">연도별 캠페인</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- 3) lnb 교육 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">교육</a>
+                    <!--lnb 하위 메뉴 3depth -->
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">대국민교육</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">대국민교육</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">대국민교육 신청현황</a>
+                      </li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">대국민교육 평가</a>
+                      </li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">전문인력 교육</a>
+                      </li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">전문인력 실적 등록</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- 4) lnb 서포터즈 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">서포터즈</a>
+                    <!--lnb 하위 메뉴 3depth -->
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item">
+                        <a href="#">연도별 서포터즈</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- 5) lnb 지역사회 음주폐해예방사업 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">지역사회 음주폐해예방사업</a>
+                    <!--lnb 하위 메뉴 3depth -->
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="lnb-list">
+                      <li class="list__item"><a href="#">우수사례</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li>
+            </ul>
+            <!-- 2. gnb 통계 메뉴 1depth -->
+            <ul class="nav__gnb">
+              <li class="gnb__item">
+                <!-- 1) lnb 통계 메뉴 2depth -->
                 <a href="#">통계</a>
-                <div class="dropdown-content">
-                  <a href="#">통계</a>
-                </div>
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">통계</a></li>
+                </ul>
               </li>
-              <li>
+            </ul>
+            <!-- 3. gnb 자료 메뉴 1depth -->
+            <ul class="nav__gnb">
+              <li class="gnb__item">
                 <a href="#">자료</a>
-                <div class="dropdown-content">
-                  <a href="#">영상</a>
-                  <a href="#">발간물</a>
-                  <a href="#">정책</a>
-                  <a href="#">건강</a>
-                  <a href="#">절주서포터즈 활동</a>
-                </div>
+                <!-- 1) lnb 영상 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">영상</a></li>
+                </ul>
+                <!-- 2) lnb 발간물 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">발간물</a></li>
+                </ul>
+                <!-- 3) lnb 정책 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">정책</a></li>
+                </ul>
+                <!-- 4) lnb 건강 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">건강</a></li>
+                </ul>
+                <!-- 5) lnb 절주서포터즈 활동 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item">
+                    <a href="#">절주서포터즈 활동</a>
+                  </li>
+                </ul>
               </li>
-              <li>
+            </ul>
+            <!-- 4. gnb 알림 메뉴 1depth -->
+            <ul class="nav__gnb">
+              <li class="gnb__item">
                 <a href="#">알림</a>
-                <div class="dropdown-content">
-                  <a href="#">공지사항&소식</a>
-                  <a href="#">언론보도</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">Q&A</a>
-                </div>
+                <!-- 1) lnb 공지사항&소식 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">공지사항&소식</a></li>
+                </ul>
+                <!-- 2) lnb 언론보도 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">언론보도</a></li>
+                </ul>
+                <!-- 3) lnb FAQ 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">FAQ</a></li>
+                </ul>
+                <!-- 4) lnb Q&A 메뉴 2depth -->
+                <ul class="nav__lnb">
+                  <li class="lnb__item"><a href="#">Q&A</a></li>
+                </ul>
               </li>
             </ul>
           </nav>
-          <button class="menu-toggle">☰</button>
         </div>
-      </header>
-
-      <main id="main">
-        <!-- 메인 내용 작성 -->
-        <!-- 려린 파트 -->
-        <article class="box">
-          <h2>
-            <img
-              src="./assets/images/campaign_txt01.png"
-              alt="리스타트 캠페인"
-            />
-          </h2>
-          <p>
-            <img src="./assets/images/campaign_txt02.png" alt="알코올" />
-          </p>
-          <span class="character"></span>
-        </article>
-        <!-- 상은 파트 -->
-        <div class="main_left">
-          <article class="main_latest-data">
-            <h2 class="main_subject">
-              <i class="main_icon"></i>
-              최신자료
-            </h2>
-            <ul class="main_data-list">
-              <li>
-                <a
-                  href="https://www.khepi.or.kr/board/view?linkId=1009326&menuId=MENU01181"
-                  ><span class="main_category">발간물</span>
-                  <strong class="main_data-title"
-                    >음주폐해예방 홍보 신규 브랜드 '무음모드ON' 브랜드
-                    가이드라인</strong
-                  >
-                  <span class="main_date">2025-03-13</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.khepi.or.kr/board/view?linkId=1009317&menuId=MENU01181"
-                  ><span class="main_category">발간물</span>
-                  <strong class="main_data-title"
-                    >「2025년 지역사회 통합건강증진사업 안내 : 음주폐해예방」
-                    안내서</strong
-                  >
-                  <span class="main_date">2025-03-12</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.khepi.or.kr/board/view?linkId=1009233&menuId=MENU00697"
-                  ><span class="main_category">영상</span>
-                  <strong class="main_data-title"
-                    >[스브스뉴스] 2편. "술 땡겨요", 10대 인터뷰 본 교수님
-                    반응</strong
-                  >
-                  <span class="main_date">2025-02-28</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.khepi.or.kr/board/view?linkId=1009232&menuId=MENU00697"
-                  ><span class="main_category">영상</span>
-                  <strong class="main_data-title"
-                    >[스브스뉴스] 1편. 애들도 보는데?! 음주 장면 제한없는 요즘
-                    미디어 근황</strong
-                  >
-                  <span class="main_date">2025-02-28</span></a
-                >
-              </li>
-            </ul>
-          </article>
-          <a
-            href="https://www.khepi.or.kr/acs/acsExpertEdu/main?menuId=MENU01174"
-            class="main_alchol-edu-link"
-          >
-            <h2 class="main_subject">
-              절주전문인력<span>양성과정 바로가기</span>
-            </h2>
+      </section>
+      <!-- 윤민 파트 -->
+      <div class="header-container">
+        <div class="logo">
+          <a href="https://www.khepi.or.kr/alcoholstop">
+            <img src="logo.png" alt="절주온 로고" />
           </a>
         </div>
-        <!-- 윤지 파트 -->
-        <div class="main_right">
-          <!-- 메인 - 소통 영역 -->
-          <div class="communication">
-            <section class="communication__header">
-              <h2 class="communication__title">
-                <i class="communication__icon"></i>
-                <span class="communication__highlight">소통,</span> 이야기를
-                전해요
-              </h2>
-            </section>
-
-            <nav class="communication__tabs">
-              <ul class="communication__tabs-list">
-                <li
-                  class="communication__tabs-item communication__tabs-item--active"
-                >
-                  <a href="#notice" class="communication__tab-link">공지사항</a>
-                </li>
-                <li class="communication__tabs-item">
-                  <a href="#news" class="communication__tab-link">소식</a>
-                </li>
-                <li class="communication__tabs-item">
-                  <a href="#press" class="communication__tab-link">언론보도</a>
-                </li>
-                <li
-                  class="communication__tabs-item communication__tabs-item--more"
-                >
-                  <a href="#" class="communication__tab-link">더보기</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="communication__content">
-              <div
-                id="notice"
-                class="communication__panel communication__panel--active"
-              >
-                <ul class="communication__list">
-                  <li class="communication__item">
-                    <a href="#" class="communication__link">
-                      <strong class="communication__title"
-                        >나의 건강을 지키기 위한 '음주예방 가이드라인'
-                        배포</strong
-                      >
-                      <p class="communication__desc">
-                        나의 건강을 지키기 위한 '음주폐방 가이드라인'을
-                        배포합니다. 국립암센터와 함께한 연구를 통해 개발된
-                        가이드라인으로, 대국민을 포함한 임산부, 어린이/청소년
-                        가이드라인도 별도로 준비되어 있습니다.
-                      </p>
-                      <time datetime="2025-03-19" class="communication__date"
-                        >2025-03-19</time
-                      >
-                    </a>
-                  </li>
-                  <li class="communication__item">
-                    <a href="#" class="communication__link">
-                      [엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!
-                      <time datetime="2025-03-13" class="communication__date"
-                        >2025-03-13</time
-                      >
-                    </a>
-                  </li>
-                  <li class="communication__item">
-                    <a href="#" class="communication__link">
-                      [엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!
-                      <time datetime="2025-03-13" class="communication__date"
-                        >2025-03-13</time
-                      >
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="communication__more"
-                  >더보기 <i class="xi-plus-min"></i
-                ></a>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#">사업</a>
+              <div class="dropdown-content">
+                <a href="#">모니터링</a>
+                <a href="#">홍보캠페인</a>
+                <a href="#">교육</a>
+                <a href="#">서포터즈</a>
+                <a href="#">지역사회 음주폐해예방사업</a>
               </div>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="#">통계</a>
+              <div class="dropdown-content">
+                <a href="#">통계</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">자료</a>
+              <div class="dropdown-content">
+                <a href="#">영상</a>
+                <a href="#">발간물</a>
+                <a href="#">정책</a>
+                <a href="#">건강</a>
+                <a href="#">절주서포터즈 활동</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">알림</a>
+              <div class="dropdown-content">
+                <a href="#">공지사항&소식</a>
+                <a href="#">언론보도</a>
+                <a href="#">FAQ</a>
+                <a href="#">Q&A</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </header>
 
-          <!-- 주요사업 섹션 -->
-          <article class="business">
-            <h2 class="business__title hidden">주요사업</h2>
-            <ul class="business__list">
-              <li class="business__item">
-                <a
-                  href="/board?menuId=MENU01142&amp;siteId=SITE00005"
-                  class="business__link"
-                >
-                  <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link01.svg"
-                      alt="음주조장환경 모니터링"
-                    />
-                  </span>
-                  <span class="business__text">음주조장환경<br />모니터링</span>
-                </a>
+    <main id="main">
+      <!-- 메인 내용 작성 -->
+
+      <!-- 상은 파트 -->
+      <div class="main_left">
+        <article class="main_latest-data">
+          <h2 class="main_subject">
+            <i class="main_icon"></i>
+            최신자료
+          </h2>
+          <ul class="main_data-list">
+            <li>
+              <a href="https://www.khepi.or.kr/board/view?linkId=1009326&menuId=MENU01181"><span
+                  class="main_category">발간물</span>
+                <strong class="main_data-title">음주폐해예방 홍보 신규 브랜드 '무음모드ON' 브랜드
+                  가이드라인</strong>
+                <span class="main_date">2025-03-13</span></a>
+            </li>
+            <li>
+              <a href="https://www.khepi.or.kr/board/view?linkId=1009317&menuId=MENU01181"><span
+                  class="main_category">발간물</span>
+                <strong class="main_data-title">「2025년 지역사회 통합건강증진사업 안내 : 음주폐해예방」
+                  안내서</strong>
+                <span class="main_date">2025-03-12</span></a>
+            </li>
+            <li>
+              <a href="https://www.khepi.or.kr/board/view?linkId=1009233&menuId=MENU00697"><span
+                  class="main_category">영상</span>
+                <strong class="main_data-title">[스브스뉴스] 2편. "술 땡겨요", 10대 인터뷰 본 교수님
+                  반응</strong>
+                <span class="main_date">2025-02-28</span></a>
+            </li>
+            <li>
+              <a href="https://www.khepi.or.kr/board/view?linkId=1009232&menuId=MENU00697"><span
+                  class="main_category">영상</span>
+                <strong class="main_data-title">[스브스뉴스] 1편. 애들도 보는데?! 음주 장면 제한없는 요즘
+                  미디어 근황</strong>
+                <span class="main_date">2025-02-28</span></a>
+            </li>
+          </ul>
+        </article>
+        <a href="https://www.khepi.or.kr/acs/acsExpertEdu/main?menuId=MENU01174" class="main_alchol-edu-link">
+          <h2 class="main_subject">
+            절주전문인력<span>양성과정 바로가기</span>
+          </h2>
+        </a>
+      </div>
+      <!-- 려린 파트 -->
+      <article class="box">
+        <h2>
+          <img src="./assets/images/campaign_txt01.png" alt="리스타트 캠페인">
+        </h2>
+        <p>
+          <img src="./assets/images/campaign_txt02.png" alt="알코올">
+        </p>
+        <span class="character"></span>
+      </article>
+
+      <span class="back"></span>
+      <!-- 윤지 파트 -->
+      <div class="main_right">
+        <!-- 소통 영역 -->
+        <article class="communication">
+          <h2 class="communication__title">
+            <i class="communication__icon"></i>
+            소통, 이야기를 전해요
+          </h2>
+
+          <!-- 탭 영역 -->
+          <nav class="communication__tabs">
+            <ul class="communication__tabs-list">
+              <li class="communication__tabs-item communication__tabs-item--active" data-tab="notice">
+                공지사항
               </li>
-              <li class="business__item">
-                <a
-                  href="/acs/acsExpertEdu/main?menuId=MENU01174"
-                  class="business__link"
-                >
-                  <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link02.svg"
-                      alt="절주교육 및 전문가 양성"
-                    />
-                  </span>
-                  <span class="business__text"
-                    >절주교육 및<br />전문가 양성</span
-                  >
-                </a>
-              </li>
-              <li class="business__item">
-                <a
-                  href="/board?menuId=MENU01145&amp;siteId=SITE00005"
-                  class="business__link"
-                >
-                  <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link03.svg"
-                      alt="음주폐해예방 홍보캠페인"
-                    />
-                  </span>
-                  <span class="business__text"
-                    >음주폐해예방<br />홍보캠페인</span
-                  >
-                </a>
-              </li>
-              <li class="business__item">
-                <a
-                  href="/board?menuId=MENU01148&amp;siteId=SITE00005"
-                  class="business__link"
-                >
-                  <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link04.svg"
-                      alt="절주 서포터즈"
-                    />
-                  </span>
-                  <span class="business__text">절주<br />서포터즈</span>
-                </a>
-              </li>
-              <li class="business__item">
-                <a
-                  href="/board?menuId=MENU01151&amp;siteId=SITE00005"
-                  class="business__link"
-                >
-                  <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link05.svg"
-                      alt="보건소 절주 사업 지원"
-                    />
-                  </span>
-                  <span class="business__text">보건소 절주<br />사업 지원</span>
-                </a>
+              <li class="communication__tabs-item" data-tab="news">소식</li>
+              <li class="communication__tabs-item" data-tab="press">언론보도</li>
+              <li class="communication__tabs-item communication__tabs-item--more">
+                <a href="#" class="communication__more-link">더보기 +</a>
               </li>
             </ul>
-          </article>
-        </div>
-      </main>
+          </nav>
+
+          <!-- 탭 콘텐츠 -->
+          <div class="communication__content">
+            <!-- 공지사항 패널 -->
+            <!-- <div class="communication__panel communication__panel--active" id="notice"> -->
+            <div class="communication__panel" id="notice">
+              <div class="communication__main-news">
+                <a href="#" class="communication__link">
+                  <strong class="communication__headline">[엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!</strong>
+                  <p class="communication__desc">
+                    나의 건강을 지키기 위한 '음주폐해 가이드라인'을 배포합니다. 국립암센터와 함께한 연구를 통해 개발된 가이드라인입니다.
+                  </p>
+                  <span class="communication__date">2025-03-19</span>
+                </a>
+              </div>
+              <ul class="communication__sub-list">
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    [엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!
+                    <span class="communication__date">2025-03-13</span>
+                  </a>
+                </li>
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    [엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!
+                    <span class="communication__date">2025-03-13</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 다른 탭ㅂ은 JS로 바뀜 -->
+          </div>
+        </article>
+        <script>
+          document.querySelectorAll(".communication__tabs-item").forEach((tab) => {
+            tab.addEventListener("click", () => {
+              const target = tab.dataset.tab;
+              if (!target) return;
+
+              // 탭 활성화 변경
+              document.querySelectorAll(".communication__tabs-item").forEach((el) =>
+                el.classList.remove("communication__tabs-item--active")
+              );
+              tab.classList.add("communication__tabs-item--active");
+
+              // 콘텐츠 전환
+              document.querySelectorAll(".communication__panel").forEach((panel) =>
+                panel.classList.remove("communication__panel--active")
+              );
+              document.getElementById(target).classList.add("communication__panel--active");
+            });
+          });
+        </script>
+
+
+        <!-- 주요사업 영역 -->
+        <article class="business">
+          <h2 class="business__title hidden">주요사업</h2>
+          <ul class="business__list">
+            <li class="business__item">
+              <a href="#" class="business__link">
+                <span class="business__icon">
+                  <img src="/resources/images/acs/new_main/link01.svg" alt="아잌콘1" />
+                </span>
+                <span class="business__text">음주조장환경<br />모니터링</span>
+              </a>
+            </li>
+            <li class="business__item">
+              <a href="#" class="business__link">
+                <span class="business__icon">
+                  <img src="/resources/images/acs/new_main/link02.svg" alt="아이콘2" />
+                </span>
+                <span class="business__text">절주교육 및<br />전문가 양성</span>
+              </a>
+            </li>
+            <li class="business__item">
+              <a href="#" class="business__link">
+                <span class="business__icon">
+                  <img src="/resources/images/acs/new_main/link03.svg" alt="아이콘3" />
+                </span>
+                <span class="business__text">음주폐해예방<br />홍보캠페인</span>
+              </a>
+            </li>
+            <li class="business__item">
+              <a href="#" class="business__link">
+                <span class="business__icon">
+                  <img src="/resources/images/acs/new_main/link04.svg" alt="아이콘4" />
+                </span>
+                <span class="business__text">절주<br />서포터즈</span>
+              </a>
+            </li>
+            <li class="business__item">
+              <a href="#" class="business__link">
+                <span class="business__icon">
+                  <img src="/resources/images/acs/new_main/link05.svg" alt="아이콘5" />
+                </span>
+                <span class="business__text">보건소 절주<br />사업 지원</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
 
       <footer id="footer">
         <!-- 푸터 내용 작성 -->
         <!-- 선주 파트 -->
         <div class="footer-content">
+
           <div class="footer-links">
-            <a href="#">개인정보처리방침</a> | <a href="#">이용안내</a> |
+            <a href="#">개인정보처리방침</a> |
+            <a href="#">이용안내</a> |
             <a href="#">저작권정책</a> |
             <a href="#">찾아오시는 길</a>
 
@@ -658,9 +523,7 @@
               <option value="https://nosmk.khepi.or.kr/nsk/ntcc/index.do">
                 금연두드림
               </option>
-              <option
-                value="https://lms.khepi.or.kr/portal/home/mainAction.do?start=Y"
-              >
+              <option value="https://lms.khepi.or.kr/portal/home/mainAction.do?start=Y">
                 온라인 금연교육센터
               </option>
               <option value="https://nosmk.khepi.or.kr/clinic/login.gst">
@@ -673,6 +536,7 @@
               <!-- optgroup 오류 있음 수정 바람. -->
             </select>
 
+
             <div class="footer-address">
               <img src="image.jpg" alt="보건복지부 로고" width="50" />
               <p>
@@ -680,14 +544,24 @@
                 8층~10층 한국건강증진개발원
               </p>
               <p>Copyright 한국건강증진개발원 All right reserved</p>
-              <img src="image.jpg" alt="과학기술정보통신부 로고" width="50" />
+              <img src="image.jpg" alt="과학기술정보통신부 로고" width="50">
             </div>
           </div>
         </div>
+        <script>
+          function redirectToWebsite() {
+            var select = document.getElementById("website-select");
+            var url = select.value;
+            if (url) {
+              window.location.href = url; // 선택한 URL로 이동
+            }
+          }
+        </script>
       </footer>
-    </div>
+  </div>
 
-    <!-- 공통 js -->
-    <!-- 각 파트별 js -->
-  </body>
+  <!-- 공통 js -->
+  <!-- 각 파트별 js -->
+</body>
+
 </html>

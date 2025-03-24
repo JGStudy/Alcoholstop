@@ -1,19 +1,35 @@
 /* 려린 파트 */
 /* center */
 
+body {
+  background-color: #dae9f5;
+}
+
 .box {
   text-align: center;
-  border: 7px solid gray;
+  border: 7px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  height: 350px;
 }
 .box img {
   display: block;
   margin: 0 auto;
 }
 
-.character {
-  background-image: url('/assets/images/campaign_character.png');
-  height: 272px;
+.box .character {
+  background: url('../assets/images/campaign_character.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
   width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+}
+
+.back {
+  background: url(../assets/images/bg.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-size: contain;
 }
 
@@ -31,18 +47,12 @@
   text-align: center;
 }
 
-.main_middle {
+/* .main_middle {
   width: 29.4%;
   height: 558px;
   padding: 2.5rem;
   display: block;
-}
-
-.main_right {
-  width: 34%;
-  display: block;
-  text-align: center;
-}
+} */
 
 .main_latest-data {
   background-color: white;
@@ -52,7 +62,6 @@
   margin-bottom: 17px;
   box-sizing: border-box;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 .main_subject {
@@ -67,14 +76,13 @@
   width: 48px;
   height: 54px;
   margin-right: 15px;
-  background-image: url(https://www.khepi.or.kr/resources/images/acs/new_main/red_comma.png);
+  background-image: url(../assets/images/red_comma.png);
   vertical-align: middle;
 }
 
 .main_data-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
   justify-content: space-between;
 }
 
@@ -88,26 +96,40 @@
 .main_data-list > li > a {
   display: block;
   position: relative;
-  padding: 25px 13px 21px;
+  padding: 25px 18px 21px;
   border-radius: 18px;
   border: 1px solid #ddd;
   line-height: 1.5;
+  font-size: 15px;
 }
 
 .main_category {
+  display: block;
   font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  color: #69758e;
+  line-height: 1.1;
 }
 
 .main_data-title {
+  display: block;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display: block;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 19px;
+  color: #464646;
+  letter-spacing: -0.05em;
 }
 
 .main_date {
+  display: block;
   font-size: 14px;
+  font-weight: 400;
+  color: #8d8d8d;
+  line-height: 1.1;
 }
 
 .main_alchol-edu-link {
@@ -115,11 +137,212 @@
   display: block;
   text-align: left;
   position: relative;
-  padding: 2.5rem;
+  padding: 22.5px;
   box-sizing: border-box;
   border-radius: 20px;
+  color: #fff;
+  word-break: keep-all;
+}
+
+.main_alchol-edu-link > .main_subject {
+  font-size: 19.8px;
+  line-height: 28.8px;
+  font-weight: bold;
 }
 
 .main_subject > span {
   display: block;
+  font-weight: normal;
+}
+
+.main_alchol-edu-link > .main_subject::after {
+  display: block;
+  content: '\e90b';
+  font-family: 'xeicon';
+  font-size: 16.2px;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 18px;
+  transition: transform 0.3s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+.main_alchol-edu-link:hover .main_subject::after,
+.main_alchol-edu-link:focus .main_subject:after {
+  transform: translateX(10px);
+}
+
+.main_alchol-edu-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  background: url(../assets/images/bg_antialcoholism2.png) no-repeat right
+    center;
+  width: 150px;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+/* 윤지 파트 */
+/* 소통 영역 */
+.main_right {
+  width: 34%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.communication {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 17px;
+  box-sizing: border-box;
+  height: auto;
+  overflow: hidden;
+}
+
+.communication__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.communication__icon {
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  margin-right: 15px;
+  background-image: url('https://www.khepi.or.kr/resources/images/acs/new_main/blue_comma.png');
+  background-size: cover;
+  vertical-align: middle;
+}
+
+/* 탭 영역 */
+.communication__tabs {
+  /* border-bottom: 1px solid #ddd; */
+  margin-bottom: 1rem;
+}
+
+.communication__tabs-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.communication__tabs-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  color: #333;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+}
+
+.communication__tabs-item--active {
+  color: #1c73e8;
+  font-weight: 600;
+  border-bottom: 2px solid #1c73e8;
+}
+
+.communication__tabs-item--more {
+  margin-left: auto;
+}
+
+/* 콘텐츠 영역 */
+.communication__content {
+  margin-top: 1rem;
+}
+
+/* 대표 뉴스 */
+.communication__main-news {
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.communication__headline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.communication__desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.communication__date {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+/* 서브 뉴스 s리스트 */
+.communication__sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.communication__sub-item {
+  border-top: 1px dashed #ddd;
+  padding-top: 0.5rem;
+}
+
+.communication__sub-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* 주요사업 영역*/
+.business {
+  background-color: #007cb4;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.business__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.business__item {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.business__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.business__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.business__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
 }

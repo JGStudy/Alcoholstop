@@ -16,7 +16,7 @@
 
 /*화살표 가상요소*/
 .select_btn span::after {
-  content: "▲";
+  content: '▲';
   margin-left: 70px;
   font-size: 12px;
 }
@@ -75,16 +75,16 @@
 
 /* 각각 아이콘 배경 지정 */
 .sns_icon--facebook {
-  background-image: url("../assets/images/facebook.png");
+  background-image: url('../assets/images/facebook.png');
 }
 .sns_icon--instagram {
-  background-image: url("../assets/images/instagram.png");
+  background-image: url('../assets/images/instagram.png');
 }
 .sns_icon--youtube {
-  background-image: url("../assets/images/youtube.png");
+  background-image: url('../assets/images/youtube.png');
 }
 .sns_icon--blog {
-  background-image: url("../assets/images/blog.png");
+  background-image: url('../assets/images/blog.png');
 }
 /* 커서가 왔을 때 효과주기*/
 .top_instit ul li:hover {
@@ -194,7 +194,7 @@
 }
 
 .nav__gnb .gnb__item > a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -226,7 +226,7 @@
 
 .lnb-list .list__item::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 2px;
   height: 2px;
   margin-left: -0.5rem;
@@ -246,3 +246,93 @@
   text-decoration-line: underline;
 }
 /* 하연 파트 end*/
+
+/* 윤민 파트 */
+header {
+  background-color: #f0f2f5;
+  padding: 10px 20px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #e63946;
+}
+
+.navigation {
+  position: relative; /* 드롭다운 메뉴의 기준점 설정 */
+}
+
+/* 기존 네비게이션 스타일 */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  position: relative; /* 드롭다운 위치 설정을 위해 relative 추가 */
+  padding: 50px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block; /* 링크가 영역 전체에 걸쳐서 작동하도록 */
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-content {
+  display: none; /* 초기 상태에서는 숨겨짐 */
+  position: absolute;
+  width: 100vw; /* 화면 전체 너비 사용 */
+  left: 50%; /* 중앙에서 시작 */
+  transform: translateX(-50%); /* 중앙 정렬 보정 */
+  background-color: rgba(0, 123, 255, 0.5); /* 반투명 파란색 배경 */
+  padding: 12px 0;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block; /* 항목을 인라인 블록으로 설정 */
+  white-space: nowrap;
+}
+
+/* 드롭다운 메뉴 보이기 설정 */
+.navigation ul li:hover .dropdown-content {
+  display: flex; /* flexbox를 사용하여 항목을 가로로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+.logo img {
+  height: 50px;
+}
