@@ -16,7 +16,7 @@
 
 /*화살표 가상요소*/
 .select_btn span::after {
-  content: '▲';
+  content: "▲";
   margin-left: 70px;
   font-size: 12px;
 }
@@ -75,16 +75,16 @@
 
 /* 각각 아이콘 배경 지정 */
 .sns_icon--facebook {
-  background-image: url('../assets/images/facebook.png');
+  background-image: url("../assets/images/facebook.png");
 }
 .sns_icon--instagram {
-  background-image: url('../assets/images/instagram.png');
+  background-image: url("../assets/images/instagram.png");
 }
 .sns_icon--youtube {
-  background-image: url('../assets/images/youtube.png');
+  background-image: url("../assets/images/youtube.png");
 }
 .sns_icon--blog {
-  background-image: url('../assets/images/blog.png');
+  background-image: url("../assets/images/blog.png");
 }
 /* 커서가 왔을 때 효과주기*/
 .top_instit ul li:hover {
@@ -194,7 +194,7 @@
 }
 
 .nav__gnb .gnb__item > a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -226,7 +226,7 @@
 
 .lnb-list .list__item::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 2px;
   margin-left: -0.5rem;
@@ -248,17 +248,12 @@
 /* 하연 파트 end*/
 
 /* 윤민 파트 */
-header {
-  background-color: #f0f2f5;
+.header-container {
   padding: 10px 20px;
   color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
