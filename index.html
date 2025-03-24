@@ -685,7 +685,15 @@
           </div>
         </div>
       </div>
-
+      <script>
+        function redirectToWebsite() {
+          var select = document.getElementById("website-select");
+          var url = select.value;
+          if (url) {
+            window.location.href = url; // 선택한 URL로 이동
+          }
+        }
+      </script>
     </footer>
     </div>
 
