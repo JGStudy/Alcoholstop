@@ -35,7 +35,7 @@ body {
 
 /* 상은 파트 */
 #main {
-  background-color: lightblue;
+  background-color: #dae9f5;
   width: 98%;
   display: flex;
   gap: 1rem;
