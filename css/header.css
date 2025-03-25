@@ -16,7 +16,7 @@
 
 /*화살표 가상요소*/
 .select_btn span::after {
-  content: "▲";
+  content: '▲';
   margin-left: 70px;
   font-size: 12px;
 }
@@ -75,16 +75,16 @@
 
 /* 각각 아이콘 배경 지정 */
 .sns_icon--facebook {
-  background-image: url("../assets/images/facebook.png");
+  background-image: url('../assets/images/facebook.png');
 }
 .sns_icon--instagram {
-  background-image: url("../assets/images/instagram.png");
+  background-image: url('../assets/images/instagram.png');
 }
 .sns_icon--youtube {
-  background-image: url("../assets/images/youtube.png");
+  background-image: url('../assets/images/youtube.png');
 }
 .sns_icon--blog {
-  background-image: url("../assets/images/blog.png");
+  background-image: url('../assets/images/blog.png');
 }
 /* 커서가 왔을 때 효과주기*/
 .top_instit ul li:hover {
@@ -159,8 +159,8 @@
 
 .burger-x::before {
   display: block;
-  content: "\e9af";
-  font-family: "xeicon";
+  content: '\e9af';
+  font-family: 'xeicon';
   font-weight: normal;
   font-size: 2rem;
 }
@@ -203,7 +203,7 @@
 }
 
 .nav__gnb .gnb__item > a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -235,7 +235,7 @@
 
 .lnb-list .list__item::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 2px;
   height: 2px;
   margin-left: -0.5rem;
@@ -257,94 +257,110 @@
 /* 하연 파트 end*/
 
 /* 윤민 파트 */
-.header-container {
-  padding: 10px 20px;
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5em;
-  color: #e63946;
-}
-
-.navigation {
-  position: relative; /* 드롭다운 메뉴의 기준점 설정 */
-}
-
-/* 기존 네비게이션 스타일 */
-.navigation ul {
-  list-style: none;
-  display: flex;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.navigation ul li {
-  position: relative; /* 드롭다운 위치 설정을 위해 relative 추가 */
-  padding: 50px;
+body {
+  font-family: sans-serif;
 }
 
-.navigation ul li a {
-  text-decoration: none;
-  color: #333;
-  display: block; /* 링크가 영역 전체에 걸쳐서 작동하도록 */
+.header-container {
+  background-color: #ddebf6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
 }
 
-/* 드롭다운 메뉴 스타일 */
-.dropdown-content {
-  display: none; /* 초기 상태에서는 숨겨짐 */
-  position: absolute;
-  width: 100vw; /* 화면 전체 너비 사용 */
-  left: 50%; /* 중앙에서 시작 */
-  transform: translateX(-50%); /* 중앙 정렬 보정 */
-  background-color: rgba(0, 123, 255, 0.5); /* 반투명 파란색 배경 */
-  padding: 12px 0;
-  z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 20px;
-  text-decoration: none;
-  display: inline-block; /* 항목을 인라인 블록으로 설정 */
-  white-space: nowrap;
-}
-
-/* 드롭다운 메뉴 보이기 설정 */
-.navigation ul li:hover .dropdown-content {
-  display: flex; /* flexbox를 사용하여 항목을 가로로 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
-  justify-content: center; /* 가로 중앙 정렬 */
-}
-
-.menu-toggle {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  cursor: pointer;
-}
-
-.menu-toggle::before {
-  display: block;
-  content: "\e91c";
-  font-family: "xeicon";
-  font-weight: normal;
-  font-size: 1.5em;
-}
-
-@media (max-width: 768px) {
-  .navigation {
-    display: none;
-  }
-}
 .logo img {
   height: 50px;
+}
+
+#gnb {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#navigation > li {
+  position: relative;
+}
+
+.topMenu {
+  text-decoration: none;
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+}
+/* ✅ 마우스를 올렸을 때만 글씨색 빨간색으로 */
+#navigation > li:hover > .topMenu {
+  color: red;
+}
+
+/* 드롭다운 스타일 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5e626c;
+  width: 100vw;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 40px;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.dropdown-content li {
+  display: inline-block;
+}
+
+.dropdown-content li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* 삼각형 화살표 */
+#navigation > li:hover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #5e626c;
+  z-index: 11;
+}
+
+/* 드롭다운 활성화 */
+#navigation > li:hover .dropdown-content {
+  display: flex;
+  position: absolute;
+}
+
+/* 햄버거 */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 20px;
 }
