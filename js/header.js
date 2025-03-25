@@ -32,7 +32,15 @@ insta.onclick = () => {
 const burgerButton = document.querySelector(".menu-toggle");
 const burgerButtonX = document.querySelector(".burger-x");
 const menuAll = document.getElementById("menuAll");
+const html = document.querySelector("html");
 
-burgerButton.addEventListener("click", () => menuAll.classList.toggle("open"));
-burgerButtonX.addEventListener("click", () => menuAll.classList.toggle("open"));
+burgerButton.addEventListener("click", () => {
+  menuAll.classList.toggle("open");
+  html.classList.toggle("scrollFixed");
+});
+burgerButtonX.addEventListener("click", () => {
+  menuAll.classList.toggle("open");
+  html.classList.toggle("scrollFixed");
+});
+
 // js 하연 파트 end
