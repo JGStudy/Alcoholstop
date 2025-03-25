@@ -35,9 +35,7 @@ body {
 
 /* 상은 파트 */
 #main {
-  background-color: #dae9f5;
-  /* width: 98%; */
-  width: 1500px; /*추가*/
+  width: 98%;
   display: flex;
   justify-content: space-around; /*추가*/
   gap: 1rem;
@@ -48,13 +46,6 @@ body {
   display: block;
   text-align: center;
 }
-
-/* .main_middle {
-  width: 29.4%;
-  height: 558px;
-  padding: 2.5rem;
-  display: block;
-} */
 
 .main_latest-data {
   background-color: white;

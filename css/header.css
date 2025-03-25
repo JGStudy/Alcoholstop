@@ -119,17 +119,23 @@
   left: 0;
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  height: 0;
   visibility: hidden;
   opacity: 0;
   z-index: 1010;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.35s ease;
 }
 
 /* js 클릭 이벤트 */
 #menuAll.open {
+  height: 100%;
   visibility: visible;
   opacity: 1;
+}
+
+/* 뒷배경 스크롤 막기 */
+.scrollFixed {
+  overflow: hidden;
 }
 
 .burger {
