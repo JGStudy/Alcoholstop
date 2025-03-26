@@ -3,6 +3,7 @@
 .header_top {
   position: relative;
   display: flex;
+  max-width: 1440px;
   /* padding: 0.5% 10%; 헤더 탑 화면 중앙에 오게 */
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
