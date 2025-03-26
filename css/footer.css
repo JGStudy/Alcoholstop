@@ -68,6 +68,6 @@ footer {
 }
 
 .footer-address {
-  display: flex; /* Use Flexbox to align content */
-  justify-content: space-between; /* Distribute space between the items */
+  display: flex; 
+  justify-content: space-between; 
   align-items: center; }
