@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="scrollFixed">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>절주온</title>
-    <!-- fontawesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <!-- asset/icon css -->
     <link rel="stylesheet" href="./assets/xeicon/xeicon.min.css" />
@@ -24,17 +16,76 @@
     <!-- 공통 CSS -->
     <link rel="stylesheet" href="./css/common.css" />
     <!-- 각 파트별 CSS -->
+    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
     <!-- 각 파트별 js -->
+    <script src="./js/popup.js" defer></script>
     <script src="./js/header.js" defer></script>
-    <script src="./js/footer.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/footer.js" defer></script>
   </head>
 
   <body>
+    <!-- popup start -->
+    <div id="popup" class="popup">
+      <div class="popup_wrap">
+        <div class="popup__title">
+          <strong>알림</strong>
+          <button type="button" class="popup-button close">
+            <span class="blind">popup close button</span>
+          </button>
+        </div>
+        <div class="swiper popup__swiper">
+          <div class="swiper-wrapper popup__contents">
+            <a class="swiper-slide" href="https://buly.kr/DlJ3SSF">
+              <img
+                src="./assets/images/popup_poster.jpg"
+                alt="'무음모드ON'을 소개합니다!"
+            /></a>
+            <!-- swiper 작동 테스트용 slide -->
+            <!-- <a class="swiper-slide" href="https://buly.kr/DlJ3SSF">
+              <img src="" alt="'무음모드ON'을 소개합니다!"
+            /></a> -->
+          </div>
+          <div class="popup__swiper_btns">
+            <div class="btns__controls">
+              <button class="swiper-button-prev">
+                <span class="blind">Swiper Button Prev</span>
+              </button>
+              <div class="swiper-slide-count">
+                <span class="count-current">1</span>
+                <span class="count-slash">/</span>
+                <span class="count-total">1</span>
+              </div>
+              <button class="swiper-button-next">
+                <span class="blind">Swiper Button Next</span>
+              </button>
+              <button class="swiper-button-play pause">
+                <span class="blind">Swiper Button Play</span>
+              </button>
+            </div>
+            <div class="btns__bot">
+              <div class="bot-total-msg">
+                <span class="count-total-msg">
+                  팝업 건수 : 총 <b class="count-total">1</b>개</span
+                >
+              </div>
+              <button class="bot-button-check">
+                오늘하루열지않기
+                <i class="check-button close"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- popup end -->
     <div class="wrap">
       <header id="header">
         <!-- 헤더 내용 작성 -->
@@ -60,12 +111,18 @@
                     >
                   </li>
                   <li>
-                    <a href="/khpf" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/khpf"
+                      target="_blank"
+                      title="새창으로 열림"
                       >국민건강스마트관리R&D</a
                     >
                   </li>
                   <li>
-                    <a href="/healthplan" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/healthplan"
+                      target="_blank"
+                      title="새창으로 열림"
                       >국민건강증진종합계획</a
                     >
                   </li>
@@ -86,7 +143,10 @@
                     >
                   </li>
                   <li>
-                    <a href="/khe" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/khe"
+                      target="_blank"
+                      title="새창으로 열림"
                       >보건교육사자격관리시스템</a
                     >
                   </li>
@@ -107,17 +167,26 @@
                     >
                   </li>
                   <li>
-                    <a href="/ncd" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/ncd"
+                      target="_blank"
+                      title="새창으로 열림"
                       >일차의료 만성질환관리 사업</a
                     >
                   </li>
                   <li id="on">
-                    <a href="/alcoholstop" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/alcoholstop"
+                      target="_blank"
+                      title="새창으로 열림"
                       >절주온(ON)</a
                     >
                   </li>
                   <li>
-                    <a href="/kps" target="_blank" title="새창으로 열림"
+                    <a
+                      href="https://www.khepi.or.kr/kps"
+                      target="_blank"
+                      title="새창으로 열림"
                       >한국건강증진개발원 대표</a
                     >
                   </li>
@@ -126,44 +195,52 @@
             </div>
           </div>
           <div class="top_link">
-            <button class="top_sns">대표 SNS</button>
+            <button class="top_sns">
+              <i class="xi-speech-o icon--speech"></i> 대표 SNS
+            </button>
             <div class="sns">
-              <ul>
+              <ul class="sns_list">
                 <li>
                   <a
-                    href="https://facebook.com"
-                    class="sns_icon sns_icon--facebook"
+                    href="https://www.facebook.com/khealthpr/"
+                    class="sns_icon--facebook"
                     target="_blank"
                     title="페이스북 - 새창으로 열림"
+                    ><i class="xi-facebook"></i
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://instagram.com"
-                    class="sns_icon sns_icon--instagram"
+                    href="https://www.instagram.com/k_health_promotion/"
+                    class="sns_icon--instagram"
                     target="_blank"
                     title="인스타그램 - 새창으로 열림"
+                    ><i class="xi-instagram"></i
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://youtube.com"
-                    class="sns_icon sns_icon--youtube"
+                    href="https://www.youtube.com/channel/UCkfLPQ79UJ14vMAYNtYPaEg"
+                    class="sns_icon--youtube"
                     target="_blank"
                     title="유튜브 - 새창으로 열림"
+                    ><i class="xi-youtube-play"></i
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://blog.naver.com"
-                    class="sns_icon sns_icon--blog"
+                    href="https://blog.naver.com/khealth35000"
+                    class="sns_icon--naver"
                     target="_blank"
                     title="블로그 - 새창으로 열림"
+                    ><i class="xi-blogger"></i
                   ></a>
                 </li>
               </ul>
             </div>
-            <button class="restart_ampaign_insta">알콜스탑 캠페인</button>
+            <button class="restart_ampaign_insta">
+              <i class="xi-instagram"></i> 알콜스탑 캠페인
+            </button>
           </div>
         </div>
         <!-- 하연 파트 -->
@@ -343,60 +420,35 @@
           </div>
         </section>
         <!-- 윤민 파트 -->
-        <div class="header-container">
-          <div class="logo">
-            <a href="https://www.khepi.or.kr/alcoholstop">
-              <img src="logo.png" alt="절주온 로고" />
-            </a>
+        <div class="header__wrap">
+          <div class="header-container">
+            <h1 class="logo">
+              <a href="https://www.khepi.or.kr/alcoholstop">
+                <img src="/assets/images/logo.png" alt="절주온 로고" />
+              </a>
+            </h1>
+
+            <nav id="gnb">
+              <ul id="navigation">
+                <li data-menu="사업"><a href="#" class="topMenu">사업</a></li>
+                <li data-menu="통계"><a href="#" class="topMenu">통계</a></li>
+                <li data-menu="자료"><a href="#" class="topMenu">자료</a></li>
+                <li data-menu="알림">
+                  <a href="#" class="topMenu alert">알림</a>
+                </li>
+              </ul>
+              <div class="global-dropdown" id="globalDropdown"></div>
+            </nav>
+
+            <button class="menu-toggle">
+              <span class="blind">hamburger menu</span>
+            </button>
           </div>
-          <nav class="navigation">
-            <ul>
-              <li>
-                <a href="#">사업</a>
-                <div class="dropdown-content">
-                  <a href="#">모니터링</a>
-                  <a href="#">홍보캠페인</a>
-                  <a href="#">교육</a>
-                  <a href="#">서포터즈</a>
-                  <a href="#">지역사회 음주폐해예방사업</a>
-                </div>
-              </li>
-              <li>
-                <a href="#">통계</a>
-                <div class="dropdown-content">
-                  <a href="#">통계</a>
-                </div>
-              </li>
-              <li>
-                <a href="#">자료</a>
-                <div class="dropdown-content">
-                  <a href="#">영상</a>
-                  <a href="#">발간물</a>
-                  <a href="#">정책</a>
-                  <a href="#">건강</a>
-                  <a href="#">절주서포터즈 활동</a>
-                </div>
-              </li>
-              <li>
-                <a href="#">알림</a>
-                <div class="dropdown-content">
-                  <a href="#">공지사항&소식</a>
-                  <a href="#">언론보도</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">Q&A</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <button class="menu-toggle">
-            <span class="blind">hamberger menu</span>
-          </button>
         </div>
       </header>
 
       <main id="main">
         <!-- 메인 내용 작성 -->
-        <span class="back"></span>
 
         <!-- 상은 파트 -->
         <div class="main_left">
@@ -461,6 +513,7 @@
             </h2>
           </a>
         </div>
+
         <!-- 려린 파트 -->
         <article class="box">
           <h2>
@@ -627,9 +680,23 @@
         <!-- 선주 파트 -->
         <div class="footer-content">
           <div class="footer-links">
-            <a href="#">개인정보처리방침</a> | <a href="#">이용안내</a> |
-            <a href="#">저작권정책</a> |
-            <a href="#">찾아오시는 길</a>
+            <div class="footer-links">
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00944"
+                >개인정보처리방침</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00945"
+                >이용안내</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00947"
+                >저작권정책</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00929"
+                >찾아오시는 길</a
+              >
+            </div>
 
             <select id="website-select" onchange="redirectToWebsite()">
               <option selected disabled>사업별 웹사이트 바로가기</option>
@@ -662,18 +729,27 @@
               <!-- </optgroup> -->
               <!-- optgroup 오류 있음 수정 바람. -->
             </select>
-
-            <div class="footer-address">
-              <img src="image.jpg" alt="보건복지부 로고" width="50" />
-              <p>
-                04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운
-                8층~10층 한국건강증진개발원
-              </p>
-              <p>Copyright 한국건강증진개발원 All right reserved</p>
-              <img src="image.jpg" alt="과학기술정보통신부 로고" width="50" />
-            </div>
+          </div>
+          <hr />
+          <div class="footer-address">
+            <img
+              class="logo_korea"
+              src="./assets/images/logo.png"
+              alt="보건복지부 로고"
+            />
+            <p>
+              04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운
+              8층~10층 한국건강증진개발원 <br />
+              Copyright 한국건강증진개발원 All right reserved
+            </p>
+            <img
+              class="logo_science"
+              src="./assets/images/science.png"
+              alt="과학기술 로고"
+            />
           </div>
         </div>
+
         <script>
           function redirectToWebsite() {
             var select = document.getElementById("website-select");

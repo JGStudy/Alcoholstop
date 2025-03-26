@@ -3,14 +3,38 @@
 
 body {
   background-color: #dae9f5;
+  width: 1500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#main::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 200%;
+  height: 100%;
+  background: url("../assets/images/bg.jpg") no-repeat center bottom;
+  transform: translateX(-50%);
+  content: "";
+}
+
+.main_left,
+.main_right,
+.box {
+  position: relative;
+  z-index: 1;
 }
 
 .box {
   text-align: center;
   border: 7px solid rgba(255, 255, 255, 0.8);
   position: relative;
-  height: 350px;
+  width: 29.4%;
+  height: 558px;
 }
+
 .box img {
   display: block;
   margin: 0 auto;
@@ -25,20 +49,13 @@ body {
   transform: translateX(-50%);
 }
 
-.back {
-  background: url(../assets/images/bg.jpg);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: contain;
-}
-
 /* 상은 파트 */
 #main {
   width: 98%;
   display: flex;
   justify-content: space-around; /*추가*/
   gap: 1rem;
+  padding-bottom: 230px;
 }
 
 .main_left {
