@@ -591,37 +591,8 @@
                 </ul>
               </div>
 
-              <!-- 다른 탭ㅂ은 JS로 바뀜 -->
             </div>
           </article>
-          <script>
-            document
-              .querySelectorAll(".communication__tabs-item")
-              .forEach((tab) => {
-                tab.addEventListener("click", () => {
-                  const target = tab.dataset.tab;
-                  if (!target) return;
-
-                  // 탭 활성화 변경
-                  document
-                    .querySelectorAll(".communication__tabs-item")
-                    .forEach((el) =>
-                      el.classList.remove("communication__tabs-item--active")
-                    );
-                  tab.classList.add("communication__tabs-item--active");
-
-                  // 콘텐츠 전환
-                  document
-                    .querySelectorAll(".communication__panel")
-                    .forEach((panel) =>
-                      panel.classList.remove("communication__panel--active")
-                    );
-                  document
-                    .getElementById(target)
-                    .classList.add("communication__panel--active");
-                });
-              });
-          </script>
 
           <!-- 주요사업 영역 -->
           <article class="business">
