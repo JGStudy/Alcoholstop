@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="scrollFixed">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>절주온</title>
-    <!-- fontawesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <!-- asset/icon css -->
     <link rel="stylesheet" href="./assets/xeicon/xeicon.min.css" />
@@ -24,17 +16,76 @@
     <!-- 공통 CSS -->
     <link rel="stylesheet" href="./css/common.css" />
     <!-- 각 파트별 CSS -->
+    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
     <!-- 각 파트별 js -->
+    <script src="./js/popup.js" defer></script>
     <script src="./js/header.js" defer></script>
-    <script src="./js/footer.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/footer.js" defer></script>
   </head>
 
   <body>
+    <!-- popup start -->
+    <div id="popup" class="popup">
+      <div class="popup_wrap">
+        <div class="popup__title">
+          <strong>알림</strong>
+          <button type="button" class="popup-button close">
+            <span class="blind">popup close button</span>
+          </button>
+        </div>
+        <div class="swiper popup__swiper">
+          <div class="swiper-wrapper popup__contents">
+            <a class="swiper-slide" href="https://buly.kr/DlJ3SSF">
+              <img
+                src="./assets/images/popup_poster.jpg"
+                alt="'무음모드ON'을 소개합니다!"
+            /></a>
+            <!-- swiper 작동 테스트용 slide -->
+            <!-- <a class="swiper-slide" href="https://buly.kr/DlJ3SSF">
+              <img src="" alt="'무음모드ON'을 소개합니다!"
+            /></a> -->
+          </div>
+          <div class="popup__swiper_btns">
+            <div class="btns__controls">
+              <button class="swiper-button-prev">
+                <span class="blind">Swiper Button Prev</span>
+              </button>
+              <div class="swiper-slide-count">
+                <span class="count-current">1</span>
+                <span class="count-slash">/</span>
+                <span class="count-total">1</span>
+              </div>
+              <button class="swiper-button-next">
+                <span class="blind">Swiper Button Next</span>
+              </button>
+              <button class="swiper-button-play pause">
+                <span class="blind">Swiper Button Play</span>
+              </button>
+            </div>
+            <div class="btns__bot">
+              <div class="bot-total-msg">
+                <span class="count-total-msg">
+                  팝업 건수 : 총 <b class="count-total">1</b>개</span
+                >
+              </div>
+              <button class="bot-button-check">
+                오늘하루열지않기
+                <i class="check-button close"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- popup end -->
     <div class="wrap">
       <header id="header">
         <!-- 헤더 내용 작성 -->
@@ -547,29 +598,29 @@
           </article>
           <script>
             document
-              .querySelectorAll('.communication__tabs-item')
+              .querySelectorAll(".communication__tabs-item")
               .forEach((tab) => {
-                tab.addEventListener('click', () => {
+                tab.addEventListener("click", () => {
                   const target = tab.dataset.tab;
                   if (!target) return;
 
                   // 탭 활성화 변경
                   document
-                    .querySelectorAll('.communication__tabs-item')
+                    .querySelectorAll(".communication__tabs-item")
                     .forEach((el) =>
-                      el.classList.remove('communication__tabs-item--active')
+                      el.classList.remove("communication__tabs-item--active")
                     );
-                  tab.classList.add('communication__tabs-item--active');
+                  tab.classList.add("communication__tabs-item--active");
 
                   // 콘텐츠 전환
                   document
-                    .querySelectorAll('.communication__panel')
+                    .querySelectorAll(".communication__panel")
                     .forEach((panel) =>
-                      panel.classList.remove('communication__panel--active')
+                      panel.classList.remove("communication__panel--active")
                     );
                   document
                     .getElementById(target)
-                    .classList.add('communication__panel--active');
+                    .classList.add("communication__panel--active");
                 });
               });
           </script>
@@ -719,7 +770,7 @@
 
         <script>
           function redirectToWebsite() {
-            var select = document.getElementById('website-select');
+            var select = document.getElementById("website-select");
             var url = select.value;
             if (url) {
               window.location.href = url; // 선택한 URL로 이동
