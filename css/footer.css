@@ -1,6 +1,6 @@
 /* 푸터 전체 스타일 */
 footer {
-  background-color: #f8f9fa; /* 밝은 회색 배경 */
+  background-color: white;
   padding: 30px 0;
   text-align: center;
   font-size: 14px;
@@ -10,14 +10,16 @@ footer {
 
 /* 푸터 내부 컨텐츠 */
 .footer-content {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
 /* 푸터 링크 스타일 */
 .footer-links {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-links a {
@@ -34,6 +36,7 @@ footer {
 
 /* 웹사이트 선택 드롭다운 */
 #website-select {
+  bottom: 20%;
   margin-top: 10px;
   padding: 8px;
   font-size: 14px;
@@ -43,24 +46,28 @@ footer {
   cursor: pointer;
 }
 
-/* 푸터 주소 및 로고 */
-.footer-address {
-  margin-top: 20px;
-  font-size: 12px;
-  color: #666;
+
+/* 푸터 로고와 텍스트 */
+.logo_korea{
+  width: 350px;
+  height: 80px;
+  ; 
+}
+.logo_science{
+  width: 100px;
+  height: 80px;
+  
+}
+.footer-address{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+.footer-address p{
+  margin-top: 3%;
+  text-align: left;
 }
 
-/* 푸터 내부 이미지 (로고) */
-.footer-address img {
-  vertical-align: middle;
-  margin: 10px 5px;
-  width: 60px; /* 로고 크기 조정 */
-}
-
-/* 푸터 텍스트 */
-.footer-address p {
-  margin: 5px 0;
-}
+.footer-address {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; }

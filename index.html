@@ -671,9 +671,13 @@
         <!-- 선주 파트 -->
         <div class="footer-content">
           <div class="footer-links">
-            <a href="#">개인정보처리방침</a> | <a href="#">이용안내</a> |
-            <a href="#">저작권정책</a> |
-            <a href="#">찾아오시는 길</a>
+            <div class="footer-links">
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00944">개인정보처리방침</a> |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00945">이용안내</a> |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00947">저작권정책</a> |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00929">찾아오시는 길</a>
+            </div> 
+         
 
             <select id="website-select" onchange="redirectToWebsite()">
               <option selected disabled>사업별 웹사이트 바로가기</option>
@@ -706,18 +710,15 @@
               <!-- </optgroup> -->
               <!-- optgroup 오류 있음 수정 바람. -->
             </select>
-
+            </div> 
+            <hr/>
             <div class="footer-address">
-              <img src="image.jpg" alt="보건복지부 로고" width="50" />
-              <p>
-                04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운
-                8층~10층 한국건강증진개발원
-              </p>
-              <p>Copyright 한국건강증진개발원 All right reserved</p>
-              <img src="image.jpg" alt="과학기술정보통신부 로고" width="50" />
+              <img class="logo_korea" src="./assets/images/logo.png" alt="보건복지부 로고"> 
+              <p>04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운 8층~10층 한국건강증진개발원 <br> Copyright 한국건강증진개발원 All right reserved</p>
+              <img class="logo_science" src="./assets/images/science.png" alt="과학기술 로고">
             </div>
           </div>
-        </div>
+      
         <script>
           function redirectToWebsite() {
             var select = document.getElementById('website-select');
