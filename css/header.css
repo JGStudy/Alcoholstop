@@ -108,74 +108,64 @@
   justify-content: center;
 }
 
-/* 플랫폼별 색상 */
-.sns_icon--facebook {
-  color: white !important;
+/* 공통 SNS 아이콘 스타일 */
+.sns_list li a {
+  color: white;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #1877f2;
   transition: all 0.5s ease;
+}
+
+/* Facebook */
+.sns_icon--facebook {
+  background-color: #1877f2;
 }
 .sns_icon--facebook:hover {
   background-color: white;
-  border: solid #1877f2;
-  color: #1877f2 !important;
+  border: 1px solid #1877f2;
+}
+.sns_icon--facebook:hover i {
+  color: #1877f2;
 }
 
+/* Instagram */
 .sns_icon--instagram {
-  color: white !important;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   background-color: #e4405f;
-  transition: all 0.5s ease;
 }
 .sns_icon--instagram:hover {
   background-color: white;
-  border: solid #e4405f;
-  color: #e4405f !important;
+  border: 1px solid #e4405f;
+}
+.sns_icon--instagram:hover i {
+  color: #e4405f;
 }
 
+/* YouTube */
 .sns_icon--youtube {
-  color: white !important;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   background-color: #ff0000;
-  transition: all 0.5s ease;
 }
 .sns_icon--youtube:hover {
   background-color: white;
-  border: solid #ff0000;
-  color: #ff0000 !important;
+  border: 1px solid #ff0000;
+}
+.sns_icon--youtube:hover i {
+  color: #ff0000;
 }
 
+/* Naver */
 .sns_icon--naver {
-  color: white !important;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   background-color: #2db400;
-  transition: all 0.5s ease;
 }
-
 .sns_icon--naver:hover {
   background-color: white;
-  border: solid #2db400;
-  color: #2db400 !important;
+  border: 1px solid #2db400;
+}
+.sns_icon--naver:hover i {
+  color: #2db400;
 }
 
 /* 토글 활성화 시 보이도록 설정 */
