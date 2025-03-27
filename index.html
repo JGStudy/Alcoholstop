@@ -538,39 +538,31 @@
             </h2>
 
             <!-- 탭 영역 -->
-            <nav class="communication__tabs">
+          <div class="communication__tabs">
               <ul class="communication__tabs-list">
-                <li
-                  class="communication__tabs-item communication__tabs-item--active"
-                  data-tab="notice"
-                >
+              <li class="communication__tabs-item communication__tabs-item--active" data-tab="notice">
                   공지사항
                 </li>
                 <li class="communication__tabs-item" data-tab="news">소식</li>
-                <li class="communication__tabs-item" data-tab="press">
-                  언론보도
-                </li>
-                <li
-                  class="communication__tabs-item communication__tabs-item--more"
-                >
-                  <a href="#" class="communication__more-link">더보기 +</a>
+              <li class="communication__tabs-item" data-tab="press">언론보도</li>
+              <li class="communication__tabs-item communication__tabs-item--more">
+                <a href="#" class="communication__more-link">
+                  더보기 <i class="xi-plus-min"></i>
+                </a>
                 </li>
               </ul>
-            </nav>
+          </div>
 
             <!-- 탭 콘텐츠 -->
             <div class="communication__content">
               <!-- 공지사항 패널 -->
-              <!-- <div class="communication__panel communication__panel--active" id="notice"> -->
-              <div class="communication__panel" id="notice">
+            <div class="communication__panel communication__panel--active" id="notice">
                 <div class="communication__main-news">
                   <a href="#" class="communication__link">
-                  <span class="communication__headline">[엠넷플러스 X 무음모드ON] 시청 인증 이벤트
-                    참여하세요!</span>
+                  <span class="communication__headline">[엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!</span>
                     <p class="communication__desc">
-                      나의 건강을 지키기 위한 '음주폐해 가이드라인'을
-                      배포합니다. 국립암센터와 함께한 연구를 통해 개발된
-                      가이드라인입니다.
+                    나의 건강을 지키기 위한 '음주폐해 가이드라인'을 배포합니다.
+                    국립암센터와 함께한 연구를 통해 개발된 가이드라인입니다.
                     </p>
                     <span class="communication__date">2025-03-19</span>
                   </a>
@@ -578,19 +570,81 @@
                 <ul class="communication__sub-list">
                   <li class="communication__sub-item">
                     <a href="#" class="communication__sub-link">
-                      [엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!
+                    <span class="communication__text">[엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!</span>
                       <span class="communication__date">2025-03-13</span>
                     </a>
                   </li>
                   <li class="communication__sub-item">
                     <a href="#" class="communication__sub-link">
-                      [엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!
+                    <span class="communication__text">[엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!</span>
                       <span class="communication__date">2025-03-13</span>
                     </a>
                   </li>
                 </ul>
               </div>
 
+
+            <!-- 소식 탭 콘텐츠 -->
+            <div class="communication__panel" id="news">
+              <div class="communication__main-news">
+                <a href="#" class="communication__link">
+                  <span class="communication__headline">2024 절주서포터즈 활동사례집</span>
+                  <p class="communication__desc">
+                    2024년 한 해 동안의 절주서포터즈 활동을 담은 사례집입니다.
+                  </p>
+                  <span class="communication__date">2025-02-06</span>
+                </a>
+              </div>
+              <ul class="communication__sub-list">
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    <span class="communication__text">
+                      2024 우수 절주서포터즈 비하인드 인터뷰
+                    </span>
+                    <span class="communication__date">2024-12-20</span>
+                  </a>
+                </li>
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    <span class="communication__text">
+                      2024 대학생 절주서포터즈 11월 뉴스레터
+                    </span>
+                    <span class="communication__date">2024-12-19</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 언론보도 탭 콘텐츠 -->
+            <div class="communication__panel" id="press">
+              <div class="communication__main-news">
+                <a href="#" class="communication__link">
+                  <span class="communication__headline">[주요동향] 12월 1주차 주류관련 언론기사</span>
+                  <p class="communication__desc">
+                    ○ 신체영향1. 연말 술자리 시즌…도수 낮은 하이볼도
+                  </p>
+                  <span class="communication__date">2025-01-03</span>
+                </a>
+              </div>
+              <ul class="communication__sub-list">
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    <span class="communication__text">
+                      [주요동향] 11월 4주차 주류관련 언론기사
+                    </span>
+                    <span class="communication__date">2024-12-19</span>
+                  </a>
+                </li>
+                <li class="communication__sub-item">
+                  <a href="#" class="communication__sub-link">
+                    <span class="communication__text">
+                      [주요동향] 11월 4주차 주류관련 언론기사
+                    </span>
+                    <span class="communication__date">2024-12-16</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
             </div>
           </article>
 
@@ -610,9 +664,7 @@
                   <span class="business__icon">
                   <img src="./assets/images/link02.svg" alt="아이콘2" />
                   </span>
-                  <span class="business__text"
-                    >절주교육 및<br />전문가 양성</span
-                  >
+                <span class="business__text">절주교육 및<br />전문가 양성</span>
                 </a>
               </li>
               <li class="business__item">
@@ -620,9 +672,7 @@
                   <span class="business__icon">
                   <img src="./assets/images/link03.svg" alt="아이콘3" />
                   </span>
-                  <span class="business__text"
-                    >음주폐해예방<br />홍보캠페인</span
-                  >
+                <span class="business__text">음주폐해예방<br />홍보캠페인</span>
                 </a>
               </li>
               <li class="business__item">

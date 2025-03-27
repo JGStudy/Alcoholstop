@@ -289,6 +289,12 @@ body {
   box-sizing: border-box;
 }
 
+.xi-plus-min {
+  font-size: 0.9rem;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
 /* 대표 뉴스 */
 .communication__main-news {
   border-radius: 12px;
@@ -296,13 +302,21 @@ body {
   margin-bottom: 16px;
 }
 
+.communication__panel {
+  display: none;
+}
+.communication__panel--active {
+  display: block;
+}
+
 .communication__headline {
+  display: block;
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .communication__desc {
@@ -315,6 +329,11 @@ body {
 .communication__date {
   font-size: 0.9rem;
   color: #aaa;
+}
+
+.communication__link:hover .communication__headline,
+.communication__link:hover .communication__desc {
+  text-decoration: underline;
 }
 
 /* 서브 뉴스 */
@@ -340,8 +359,19 @@ body {
   text-overflow: ellipsis;
 }
 
-.communication__sub-link:hover {
+.communication__text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.communication__sub-link:hover .communication__text {
   text-decoration: underline;
+}
+
+.communication__sub-link:hover .communication__date {
+  text-decoration: none;
 }
 
 /* 주요사업 영역*/
@@ -361,7 +391,8 @@ body {
 }
 
 .business__item {
-  flex: 1;
+  flex: 1 1 20%;
+  max-width: 20%;
   text-align: center;
   color: white;
 }
@@ -377,6 +408,10 @@ body {
   padding: 10px;
 }
 
+.business__link:hover .business__text {
+  text-decoration: underline;
+}
+
 .business__icon img {
   width: 40px;
   height: 40px;
@@ -386,4 +421,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
+  white-space: nowrap;
+  word-break: keep-all;
 }
