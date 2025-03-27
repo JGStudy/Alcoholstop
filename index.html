@@ -424,7 +424,7 @@
           <div class="header-container">
             <h1 class="logo">
               <a href="https://www.khepi.or.kr/alcoholstop">
-                <img src="/assets/images/logo.png" alt="절주온 로고" />
+                <img src="/assets/images/mainlogo.svg" alt="절주온 로고" />
               </a>
             </h1>
 
@@ -525,10 +525,8 @@
           <p>
             <img src="./assets/images/campaign_txt02.png" alt="알코올" />
           </p>
-        <span class="character"></span>
+          <span class="character"></span>
         </article>
-        
-      
 
         <!-- 윤지 파트 -->
         <div class="main_right">
@@ -600,29 +598,29 @@
           </article>
           <script>
             document
-              .querySelectorAll(".communication__tabs-item")
+              .querySelectorAll('.communication__tabs-item')
               .forEach((tab) => {
-                tab.addEventListener("click", () => {
+                tab.addEventListener('click', () => {
                   const target = tab.dataset.tab;
                   if (!target) return;
 
                   // 탭 활성화 변경
                   document
-                    .querySelectorAll(".communication__tabs-item")
+                    .querySelectorAll('.communication__tabs-item')
                     .forEach((el) =>
-                      el.classList.remove("communication__tabs-item--active")
+                      el.classList.remove('communication__tabs-item--active')
                     );
-                  tab.classList.add("communication__tabs-item--active");
+                  tab.classList.add('communication__tabs-item--active');
 
                   // 콘텐츠 전환
                   document
-                    .querySelectorAll(".communication__panel")
+                    .querySelectorAll('.communication__panel')
                     .forEach((panel) =>
-                      panel.classList.remove("communication__panel--active")
+                      panel.classList.remove('communication__panel--active')
                     );
                   document
                     .getElementById(target)
-                    .classList.add("communication__panel--active");
+                    .classList.add('communication__panel--active');
                 });
               });
           </script>
@@ -698,67 +696,93 @@
       <footer id="footer">
         <!-- 푸터 내용 작성 -->
         <!-- 선주 파트 -->
-<div class="footer-content">
-  <div class="footer-links">
-    <div class="footer-links">
-      <a href="https://www.khepi.or.kr/board?menuId=MENU00944">개인정보처리방침</a> |
-      <a href="https://www.khepi.or.kr/board?menuId=MENU00945">이용안내</a> |
-      <a href="https://www.khepi.or.kr/board?menuId=MENU00947">저작권정책</a> |
-      <a href="https://www.khepi.or.kr/board?menuId=MENU00929">찾아오시는 길</a>
-    </div> 
- 
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-links">
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00944"
+                >개인정보처리방침</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00945"
+                >이용안내</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00947"
+                >저작권정책</a
+              >
+              |
+              <a href="https://www.khepi.or.kr/board?menuId=MENU00929"
+                >찾아오시는 길</a
+              >
+            </div>
 
-    <select id="website-select" onchange="redirectToWebsite()">
-      <option selected disabled>사업별 웹사이트 바로가기</option>
-      <option value="https://www.khepi.or.kr/kps">
-        한국건강증진 대표홈페이지
-      </option>
-      <option value="https://www.khepi.or.kr/healthplan/">
-        국민건강증진종합계획
-      </option>
-      <option value="https://www.khepi.or.kr/khe">
-        보건교육사 자격관리시스템
-      </option>
-      <option value="https://www.khepi.or.kr/ncd">
-        일차의료만성질환관리사업
-      </option>
-      <option value="https://nosmk.khepi.or.kr/nsk/ntcc/index.do">
-        금연두드림
-      </option>
-      <option
-        value="https://lms.khepi.or.kr/portal/home/mainAction.do?start=Y"
-      >
-        온라인 금연교육센터
-      </option>
-      <option value="https://nosmk.khepi.or.kr/clinic/login.gst">
-        금연서비스 통합정보시스템
-      </option>
-      <option value="https://www.khepi.or.kr:8090/mhcOpenAPI/">
-        모바일 헬스케어 OpenAPI 연동지원
-      </option>
-      <!-- </optgroup> -->
-      <!-- optgroup 오류 있음 수정 바람. --> 
-    </select>
-    </div> 
-    <hr/>
-    <div class="footer-address">
-      <img class="logo_medical" src="./assets/images/flogo01.png" alt="보건복지부 로고">
-      <img class="logo_korea" src="./assets/images/flogo.svg" alt="한국건강증진개발원">
-      <p>04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운 8층~10층 한국건강증진개발원 <br> Copyright 한국건강증진개발원 All right reserved</p>
-      <img class="logo_science" src="./assets/images/wa_mark.png" alt="과학기술 로고">
+            <select id="website-select" onchange="redirectToWebsite()">
+              <option selected disabled>사업별 웹사이트 바로가기</option>
+              <option value="https://www.khepi.or.kr/kps">
+                한국건강증진 대표홈페이지
+              </option>
+              <option value="https://www.khepi.or.kr/healthplan/">
+                국민건강증진종합계획
+              </option>
+              <option value="https://www.khepi.or.kr/khe">
+                보건교육사 자격관리시스템
+              </option>
+              <option value="https://www.khepi.or.kr/ncd">
+                일차의료만성질환관리사업
+              </option>
+              <option value="https://nosmk.khepi.or.kr/nsk/ntcc/index.do">
+                금연두드림
+              </option>
+              <option
+                value="https://lms.khepi.or.kr/portal/home/mainAction.do?start=Y"
+              >
+                온라인 금연교육센터
+              </option>
+              <option value="https://nosmk.khepi.or.kr/clinic/login.gst">
+                금연서비스 통합정보시스템
+              </option>
+              <option value="https://www.khepi.or.kr:8090/mhcOpenAPI/">
+                모바일 헬스케어 OpenAPI 연동지원
+              </option>
+              <!-- </optgroup> -->
+              <!-- optgroup 오류 있음 수정 바람. -->
+            </select>
+          </div>
+          <hr />
+          <div class="footer-address">
+            <img
+              class="logo_medical"
+              src="./assets/images/flogo01.png"
+              alt="보건복지부 로고"
+            />
+            <img
+              class="logo_korea"
+              src="./assets/images/flogo.svg"
+              alt="한국건강증진개발원"
+            />
+            <p>
+              04933 서울특별시 광진구 능동로 400 (중곡동) 보건복지행정타운
+              8층~10층 한국건강증진개발원 <br />
+              Copyright 한국건강증진개발원 All right reserved
+            </p>
+            <img
+              class="logo_science"
+              src="./assets/images/wa_mark.png"
+              alt="과학기술 로고"
+            />
+          </div>
+        </div>
+
+        <script>
+          function redirectToWebsite() {
+            var select = document.getElementById('website-select');
+            var url = select.value;
+            if (url) {
+              window.location.href = url; // 선택한 URL로 이동
+            }
+          }
+        </script>
+      </footer>
     </div>
-  </div>
-
-<script>
-  function redirectToWebsite() {
-    var select = document.getElementById('website-select');
-    var url = select.value;
-    if (url) {
-      window.location.href = url; // 선택한 URL로 이동
-    }
-  }
-</script>
-</footer>
-</div>
-</body>
+  </body>
 </html>

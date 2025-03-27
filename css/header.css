@@ -347,8 +347,15 @@ ls .lnb-list .list__item {
   position: relative;
 }
 
+.logo {
+  max-width: 150px; /* 원하는 최대 너비 */
+  width: 100%;
+}
+
 .logo img {
-  height: 50px;
+  width: 100%;
+  height: auto; /* 비율 유지 */
+  display: block;
 }
 
 #gnb {
@@ -374,7 +381,6 @@ ls .lnb-list .list__item {
   text-decoration: none;
   color: #222;
   font-size: 18px;
-  font-weight: bold;
   padding: 10px 15px;
   display: inline-block;
 }
@@ -438,12 +444,11 @@ ls .lnb-list .list__item {
     display: none;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
   .global-dropdown {
     display: none !important;
+  }
+  .logo {
+    max-width: 100px;
   }
 }
 
@@ -462,10 +467,12 @@ ls .lnb-list .list__item {
 
 /* ▼ 햄버거 버튼 스타일 */
 .menu-toggle {
+  display: block;
   border: none;
   outline: none;
   background-color: inherit;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 /* ▼ 햄버거 아이콘 (xeicon 사용 시) */
