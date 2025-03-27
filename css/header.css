@@ -6,7 +6,6 @@
   width: 100%;
   max-width: 1500px;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
 }
 .header_top button {
   background: none;
@@ -15,6 +14,15 @@
   font-weight: bold;
 }
 
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* 부모의 가운데 기준 */
+  transform: translateX(-50%); /* 가운데 기준에서 왼쪽으로 밀어서 정렬 */
+  width: 100vw; /* 뷰포트 전체 너비 */
+  height: 1px;
+  background-color: lightgray;
+}
 /*화살표 가상요소*/
 .select_btn span::after {
   content: '▲';
