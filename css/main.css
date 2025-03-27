@@ -113,7 +113,6 @@ body {
 /* 상은 파트 */
 
 #main {
-  /* background-color: lightblue; */
   width: 98%;
   display: flex;
   gap: 1rem;
@@ -230,8 +229,8 @@ body {
 
 .main_alchol-edu-link > .main_subject::after {
   display: block;
-  content: '\e90b';
-  font-family: 'xeicon';
+  content: "\e90b";
+  font-family: "xeicon";
   font-size: 16.2px;
   font-weight: normal;
   color: #fff;
@@ -245,7 +244,7 @@ body {
 }
 
 .main_alchol-edu-link::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 8%;
@@ -288,7 +287,7 @@ body {
   width: 48px;
   height: 54px;
   margin-right: 15px;
-  background-image: url('https://www.khepi.or.kr/resources/images/acs/new_main/blue_comma.png');
+  background-image: url("https://www.khepi.or.kr/resources/images/acs/new_main/blue_comma.png");
   background-size: cover;
   vertical-align: middle;
 }
