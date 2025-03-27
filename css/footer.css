@@ -14,7 +14,6 @@ footer {
   margin: 0 auto;
 }
 
-
 /* 푸터 링크 스타일 */
 .footer-links {
   margin-bottom: 10px;
@@ -27,6 +26,10 @@ footer {
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
+}
+
+.footer-links .personal-link {
+  color: #ef5407;
 }
 
 .footer-links a:hover {
@@ -46,18 +49,18 @@ footer {
   cursor: pointer;
 }
 
-
 /* 푸터 로고와 텍스트 */
-.footer-address{
+.footer-address {
   display: flex;
   justify-content: center;
 }
-.footer-address p{
+.footer-address p {
   margin-top: 3%;
   text-align: left;
 }
 
 .footer-address {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,10 +1,10 @@
 /* 려린 파트 */
 /* center */
 body {
+  overflow-x: hidden;
+}
+.wrap {
   background-color: #dae9f5;
-  width: 1500px;
-  position: relative;
-  margin: 0 auto;
 }
 
 #main::before {
@@ -14,9 +14,9 @@ body {
   left: 50%;
   width: 200%;
   height: 100%;
-  background: url('../assets/images/bg.jpg') no-repeat center;
+  background: url("../assets/images/bg.jpg") no-repeat center;
   transform: translateX(-50%);
-  content: '';
+  content: "";
   background-size: cover;
 }
 
@@ -66,7 +66,7 @@ body {
 
 /* 못생긴 애들 */
 .character {
-  background: url('../assets/images/campaign_character.png') no-repeat center;
+  background: url("../assets/images/campaign_character.png") no-repeat center;
   display: block;
   position: absolute;
   left: 50%;
@@ -105,6 +105,9 @@ body {
 /* 상은 파트 */
 
 #main {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
   width: 98%;
   display: flex;
   justify-content: space-around; /*추가*/
@@ -221,8 +224,8 @@ body {
 
 .main_alchol-edu-link > .main_subject::after {
   display: block;
-  content: '\e90b';
-  font-family: 'xeicon';
+  content: "\e90b";
+  font-family: "xeicon";
   font-size: 16.2px;
   font-weight: normal;
   color: #fff;
@@ -236,7 +239,7 @@ body {
 }
 
 .main_alchol-edu-link::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 8%;
