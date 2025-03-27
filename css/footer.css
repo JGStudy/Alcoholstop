@@ -48,16 +48,6 @@ footer {
 
 
 /* 푸터 로고와 텍스트 */
-.logo_korea{
-  width: 350px;
-  height: 80px;
-  ; 
-}
-.logo_science{
-  width: 100px;
-  height: 80px;
-  
-}
 .footer-address{
   display: flex;
   justify-content: center;
