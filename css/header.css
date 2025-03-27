@@ -331,7 +331,7 @@
   transform: translateY(-50%);
   background-color: #e01f27;
 }
-ls .lnb-list .list__item {
+.lnb-list .list__item {
   color: #757575;
   padding: 0.1rem 1rem;
 }
