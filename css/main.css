@@ -1,6 +1,5 @@
 /* 려린 파트 */
 /* center */
-
 body {
   background-color: #dae9f5;
   width: 1500px;
@@ -15,10 +14,12 @@ body {
   left: 50%;
   width: 200%;
   height: 100%;
-  background: url("../assets/images/bg.jpg") no-repeat center bottom;
+  background: url("../assets/images/bg.jpg") no-repeat center;
   transform: translateX(-50%);
   content: "";
+  background-size: cover;
 }
+
 
 .main_left,
 .main_right,
@@ -27,29 +28,90 @@ body {
   z-index: 1;
 }
 
+
+/* 흰 박스 */
 .box {
   text-align: center;
   border: 7px solid rgba(255, 255, 255, 0.8);
   position: relative;
-  width: 29.4%;
+  /* width:600px; */
+  width:29.4%;
+  /* min-height: 520px; */
   height: 558px;
+  /* margin: auto; */
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 95px 25px 25px 25px;
+  justify-content: space-between;
+}
+/* 리스타트 */
+
+.box h2 img{
+  /* display: block; */
+  /* margin-block-start: 1em; */
+  /* margin-block-end: 1em; */
+  /* margin-inline-start: 0px; */
+  /* margin-inline-end: 0px; */
+  /* unicode-bidi: isolate; */
+  /* margin: 0px 0px 47px; */
+  margin-bottom: 50px;
 }
 
-.box img {
+/* 안전 시작 */
+.box2 p img {
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   margin: 0 auto;
 }
 
-.box .character {
-  background: url("../assets/images/campaign_character.png") no-repeat center;
-  background-size: contain;
+/* 못생긴 애들 */
+.character {
+  background: url('../assets/images/campaign_character.png') no-repeat center;
+  display: block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  left: 50%;
+  width: 200%;
+  height: 60%;
   transform: translateX(-50%);
+  /* bottom:0; */
+  z-index: 2;
 }
 
+
+
+/* 반응형 */
+@media all and (max-width:820px){
+  #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    order:1;
+    width: 100%;
+    position:relative;
+    z-index: 10;
+  }
+
+  .main_left{
+    order:2;
+    width: 48%;
+    margin-top: 20rem;
+  }
+  .main_right{
+    order:3;
+    width: 48%;
+  }
+}
+
+
+
+
+
 /* 상은 파트 */
+
 #main {
   width: 98%;
   display: flex;
@@ -62,6 +124,7 @@ body {
   display: block;
   text-align: center;
 }
+
 
 .main_latest-data {
   background-color: white;
