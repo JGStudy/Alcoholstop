@@ -106,34 +106,36 @@ body {
 
 
 /* 상은 파트 */
-
+/* 메인 영역 */
 #main {
   margin: 0 auto;
   max-width: 1500px;
   width: 100%;
   width: 98%;
   display: flex;
-  justify-content: space-around; /*추가*/
-  gap: 1rem;
+  justify-content: space-around; /* 요소 균등하게 정렬 */
+  gap: 1rem; /* 요소 간 간격 */
   padding-bottom: 230px;
 }
 
+/* 좌측 컨텐츠 영역 */
 .main_left {
   width: 34%;
   display: block;
   text-align: center;
 }
 
+/* 최신 자료 영역 */
 .main_latest-data {
   background-color: white;
   height: 403px;
   width: 100%;
   padding: 25px;
   margin-bottom: 17px;
-  box-sizing: border-box;
   border-radius: 20px;
 }
 
+/* 제목 스타일 */
 .main_subject {
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -141,6 +143,7 @@ body {
   font-weight: 800;
 }
 
+/* 최신 자료 아이콘 */
 .main_icon {
   display: inline-block;
   width: 48px;
@@ -150,12 +153,14 @@ body {
   vertical-align: middle;
 }
 
+/* 최신 자료 리스트 */
 .main_data-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* 여러 줄 표시 */
   justify-content: space-between;
 }
 
+/* 리스트 항목 스타일 */
 .main_data-list > li {
   flex: 1 1 45%;
   padding: 1%;
@@ -163,6 +168,7 @@ body {
   overflow: hidden;
 }
 
+/* 최신 자료 링크 스타일 */
 .main_data-list > li > a {
   display: block;
   position: relative;
@@ -173,10 +179,12 @@ body {
   font-size: 15px;
 }
 
+/* 링크 hover 효과 */
 .main_data-list a:hover {
   text-decoration: underline;
 }
 
+/* 자료 카테고리 스타일 */
 .main_category {
   display: block;
   font-size: 15px;
@@ -186,11 +194,12 @@ body {
   line-height: 1.1;
 }
 
+/* 자료 제목 스타일 */
 .main_data-title {
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; /* 긴 텍스트 줄임 */
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 19px;
@@ -198,6 +207,7 @@ body {
   letter-spacing: -0.05em;
 }
 
+/* 날짜 스타일 */
 .main_date {
   display: block;
   font-size: 14px;
@@ -206,6 +216,7 @@ body {
   line-height: 1.1;
 }
 
+/* 절주 전문 인력 양성과정 링크 */
 .main_alchol-edu-link {
   background-color: #7862bf;
   display: block;
@@ -218,17 +229,20 @@ body {
   word-break: keep-all;
 }
 
+/* 절주 전문 인력 양성과정 제목 스타일 */
 .main_alchol-edu-link > .main_subject {
   font-size: 19.8px;
   line-height: 28.8px;
   font-weight: bold;
 }
 
+/* 서브 제목 스타일 */
 .main_subject > span {
   display: block;
   font-weight: normal;
 }
 
+/* 절주 전문 인력 양성과정 아이콘 효과 */
 .main_alchol-edu-link > .main_subject::after {
   display: block;
   content: "\e90b";
@@ -240,11 +254,13 @@ body {
   transition: transform 0.3s ease-in-out; /* 부드러운 애니메이션 */
 }
 
+/* hover 시 아이콘 이동 효과 */
 .main_alchol-edu-link:hover .main_subject::after,
 .main_alchol-edu-link:focus .main_subject:after {
   transform: translateX(10px);
 }
 
+/* 절주 전문 인력 양성과정 이미지 */
 .main_alchol-edu-link::after {
   content: "";
   position: absolute;
