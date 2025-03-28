@@ -16,6 +16,7 @@
     <!-- 공통 CSS -->
     <link rel="stylesheet" href="./css/common.css" />
     <!-- 각 파트별 CSS -->
+    <link rel="stylesheet" href="./css/acs.css" />
     <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -29,6 +30,13 @@
   </head>
 
   <body>
+    <!-- skipNavigation start -->
+    <div id="skip_nav">
+      <!-- 바로가기 링크 -->
+      <a href="#main">본문 바로가기</a>
+      <a href="#gnb">주메뉴 바로가기</a>
+    </div>
+    <!-- skipNavigation end -->
     <!-- popup start -->
     <div id="popup" class="popup">
       <div class="popup_wrap">
@@ -70,7 +78,7 @@
             <div class="btns__bot">
               <div class="bot-total-msg">
                 <span class="count-total-msg">
-                  팝업 건수 : 총 <b class="count-total">1</b>개</span
+                  팝업 건수 : 총 <b class="total">1</b>개</span
                 >
               </div>
               <button class="bot-button-check">
@@ -242,7 +250,9 @@
               <i class="xi-instagram"></i> 알콜스탑 캠페인
             </button>
           </div>
+          <div class="line"></div>
         </div>
+
         <!-- 하연 파트 -->
         <!-- 1. 햄버거바 클릭 전 -> 윤민이 버튼으로 수정 -->
         <!-- 2. 햄버거바 클릭 후 -->
@@ -423,7 +433,7 @@
         <div class="header__wrap">
           <div class="header-container">
             <h1 class="logo">
-              <a href="https://www.khepi.or.kr/alcoholstop">
+              <a href="./index.html">
                 <img src="/assets/images/mainlogo.svg" alt="절주온 로고" />
               </a>
             </h1>
@@ -449,7 +459,6 @@
 
       <main id="main">
         <!-- 메인 내용 작성 -->
-
         <!-- 상은 파트 -->
         <div class="main_left">
           <article class="main_latest-data">
@@ -513,7 +522,6 @@
             </h2>
           </a>
         </div>
-
         <!-- 려린 파트 -->
         <article class="box">
           <h2>
@@ -527,7 +535,6 @@
           </p>
           <span class="character"></span>
         </article>
-
         <!-- 윤지 파트 -->
         <div class="main_right">
           <!-- 소통 영역 -->
@@ -536,9 +543,8 @@
               <i class="communication__icon"></i>
               소통, 이야기를 전해요
             </h2>
-
             <!-- 탭 영역 -->
-            <nav class="communication__tabs">
+            <div class="communication__tabs">
               <ul class="communication__tabs-list">
                 <li
                   class="communication__tabs-item communication__tabs-item--active"
@@ -553,21 +559,24 @@
                 <li
                   class="communication__tabs-item communication__tabs-item--more"
                 >
-                  <a href="#" class="communication__more-link">더보기 +</a>
+                  <a href="#" class="communication__more-link">
+                    더보기 <i class="xi-plus-min"></i>
+                  </a>
                 </li>
               </ul>
-            </nav>
-
+            </div>
             <!-- 탭 콘텐츠 -->
             <div class="communication__content">
               <!-- 공지사항 패널 -->
-              <!-- <div class="communication__panel communication__panel--active" id="notice"> -->
-              <div class="communication__panel" id="notice">
+              <div
+                class="communication__panel communication__panel--active"
+                id="notice"
+              >
                 <div class="communication__main-news">
                   <a href="#" class="communication__link">
-                    <strong class="communication__headline"
+                    <span class="communication__headline"
                       >[엠넷플러스 X 무음모드ON] 시청 인증 이벤트
-                      참여하세요!</strong
+                      참여하세요!</span
                     >
                     <p class="communication__desc">
                       나의 건강을 지키기 위한 '음주폐해 가이드라인'을
@@ -580,62 +589,97 @@
                 <ul class="communication__sub-list">
                   <li class="communication__sub-item">
                     <a href="#" class="communication__sub-link">
-                      [엠넷플러스 X 무음모드ON] 시청 인증 이벤트 참여하세요!
+                      <span class="communication__text"
+                        >[엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트
+                        참여하세요!</span
+                      >
                       <span class="communication__date">2025-03-13</span>
                     </a>
                   </li>
                   <li class="communication__sub-item">
                     <a href="#" class="communication__sub-link">
-                      [엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트 참여하세요!
+                      <span class="communication__text"
+                        >[엠넷플러스 X 무음모드ON] 퀴즈 인증 이벤트
+                        참여하세요!</span
+                      >
                       <span class="communication__date">2025-03-13</span>
                     </a>
                   </li>
                 </ul>
               </div>
-
-              <!-- 다른 탭ㅂ은 JS로 바뀜 -->
+              <!-- 소식 탭 콘텐츠 -->
+              <div class="communication__panel" id="news">
+                <div class="communication__main-news">
+                  <a href="#" class="communication__link">
+                    <span class="communication__headline"
+                      >2024 절주서포터즈 활동사례집</span
+                    >
+                    <p class="communication__desc">
+                      2024년 한 해 동안의 절주서포터즈 활동을 담은 사례집입니다.
+                    </p>
+                    <span class="communication__date">2025-02-06</span>
+                  </a>
+                </div>
+                <ul class="communication__sub-list">
+                  <li class="communication__sub-item">
+                    <a href="#" class="communication__sub-link">
+                      <span class="communication__text">
+                        2024 우수 절주서포터즈 비하인드 인터뷰
+                      </span>
+                      <span class="communication__date">2024-12-20</span>
+                    </a>
+                  </li>
+                  <li class="communication__sub-item">
+                    <a href="#" class="communication__sub-link">
+                      <span class="communication__text">
+                        2024 대학생 절주서포터즈 11월 뉴스레터
+                      </span>
+                      <span class="communication__date">2024-12-19</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 언론보도 탭 콘텐츠 -->
+              <div class="communication__panel" id="press">
+                <div class="communication__main-news">
+                  <a href="#" class="communication__link">
+                    <span class="communication__headline"
+                      >[주요동향] 12월 1주차 주류관련 언론기사</span
+                    >
+                    <p class="communication__desc">
+                      ○ 신체영향1. 연말 술자리 시즌…도수 낮은 하이볼도
+                    </p>
+                    <span class="communication__date">2025-01-03</span>
+                  </a>
+                </div>
+                <ul class="communication__sub-list">
+                  <li class="communication__sub-item">
+                    <a href="#" class="communication__sub-link">
+                      <span class="communication__text">
+                        [주요동향] 11월 4주차 주류관련 언론기사
+                      </span>
+                      <span class="communication__date">2024-12-19</span>
+                    </a>
+                  </li>
+                  <li class="communication__sub-item">
+                    <a href="#" class="communication__sub-link">
+                      <span class="communication__text">
+                        [주요동향] 11월 4주차 주류관련 언론기사
+                      </span>
+                      <span class="communication__date">2024-12-16</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </article>
-          <script>
-            document
-              .querySelectorAll('.communication__tabs-item')
-              .forEach((tab) => {
-                tab.addEventListener('click', () => {
-                  const target = tab.dataset.tab;
-                  if (!target) return;
-
-                  // 탭 활성화 변경
-                  document
-                    .querySelectorAll('.communication__tabs-item')
-                    .forEach((el) =>
-                      el.classList.remove('communication__tabs-item--active')
-                    );
-                  tab.classList.add('communication__tabs-item--active');
-
-                  // 콘텐츠 전환
-                  document
-                    .querySelectorAll('.communication__panel')
-                    .forEach((panel) =>
-                      panel.classList.remove('communication__panel--active')
-                    );
-                  document
-                    .getElementById(target)
-                    .classList.add('communication__panel--active');
-                });
-              });
-          </script>
-
           <!-- 주요사업 영역 -->
           <article class="business">
-            <h2 class="business__title hidden">주요사업</h2>
             <ul class="business__list">
               <li class="business__item">
                 <a href="#" class="business__link">
                   <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link01.svg"
-                      alt="아잌콘1"
-                    />
+                    <img src="./assets/images/link01.svg" alt="아이콘1" />
                   </span>
                   <span class="business__text">음주조장환경<br />모니터링</span>
                 </a>
@@ -643,10 +687,7 @@
               <li class="business__item">
                 <a href="#" class="business__link">
                   <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link02.svg"
-                      alt="아이콘2"
-                    />
+                    <img src="./assets/images/link02.svg" alt="아이콘2" />
                   </span>
                   <span class="business__text"
                     >절주교육 및<br />전문가 양성</span
@@ -656,10 +697,7 @@
               <li class="business__item">
                 <a href="#" class="business__link">
                   <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link03.svg"
-                      alt="아이콘3"
-                    />
+                    <img src="./assets/images/link03.svg" alt="아이콘3" />
                   </span>
                   <span class="business__text"
                     >음주폐해예방<br />홍보캠페인</span
@@ -669,10 +707,7 @@
               <li class="business__item">
                 <a href="#" class="business__link">
                   <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link04.svg"
-                      alt="아이콘4"
-                    />
+                    <img src="./assets/images/link04.svg" alt="아이콘4" />
                   </span>
                   <span class="business__text">절주<br />서포터즈</span>
                 </a>
@@ -680,10 +715,7 @@
               <li class="business__item">
                 <a href="#" class="business__link">
                   <span class="business__icon">
-                    <img
-                      src="/resources/images/acs/new_main/link05.svg"
-                      alt="아이콘5"
-                    />
+                    <img src="./assets/images/link05.svg" alt="아이콘5" />
                   </span>
                   <span class="business__text">보건소 절주<br />사업 지원</span>
                 </a>
@@ -699,7 +731,9 @@
         <div class="footer-content">
           <div class="footer-links">
             <div class="footer-links">
-              <a href="https://www.khepi.or.kr/board?menuId=MENU00944"
+              <a
+                href="https://www.khepi.or.kr/board?menuId=MENU00944"
+                class="personal-link"
                 >개인정보처리방침</a
               >
               |
@@ -775,7 +809,7 @@
 
         <script>
           function redirectToWebsite() {
-            var select = document.getElementById('website-select');
+            var select = document.getElementById("website-select");
             var url = select.value;
             if (url) {
               window.location.href = url; // 선택한 URL로 이동

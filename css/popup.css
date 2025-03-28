@@ -2,10 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
-.scrollFixed {
-  overflow: hidden;
-}
-
+/* popup layout setting */
 #popup {
   position: absolute;
   width: 100%;
@@ -22,11 +19,13 @@
   transition: all 0.5s linear;
 }
 
+/* popup active(show) style */
 #popup.show {
   opacity: 1;
   transform: translateX(0);
 }
 
+/* font style */
 .popup_wrap * {
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
@@ -35,6 +34,7 @@
   color: #fff;
 }
 
+/* popup inner container layout setting */
 .popup_wrap {
   position: relative;
   display: flex;
@@ -46,6 +46,7 @@
   overflow-y: auto;
 }
 
+/* popup title style setting */
 .popup__title {
   width: 60%;
   display: flex;
@@ -55,10 +56,13 @@
   font-size: 1.5rem;
 }
 
-.popup-button {
+/* btn 초기화 */
+.popup-button,
+.btns__controls button {
   border: none;
   outline: none;
   background-color: inherit;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -70,15 +74,16 @@
   font-size: 1.5rem;
 }
 
+/* btn hover animation */
 .popup-button:hover {
   transform: rotate(180deg);
 }
 
-/* swiper.js css */
+/* swiper.js style setting */
+
 .popup__swiper {
   width: 60%;
   margin: 0 auto;
-  position: relative;
   overflow: hidden;
   display: block;
 }
@@ -116,7 +121,7 @@
   object-fit: cover;
 }
 
-/* 하단 버튼 관련 css */
+/* 하단 버튼 관련 style setting */
 .popup__swiper_btns {
   width: 100%;
 }
@@ -128,17 +133,14 @@
   margin: 1.5rem 0;
 }
 
-.btns__controls button {
+.btns__controls button,
+.swiper-slide {
   display: inline-block;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: inherit;
   padding: 4px 10px;
-  margin: 0 10px;
 }
 
 .btns__controls button::after {
+  margin: 0 10px;
   display: block;
   font-family: "xeicon";
   font-weight: normal;
@@ -161,12 +163,6 @@
   content: "\ea3e";
 }
 
-.swiper-slide-count {
-  display: inline-block;
-  padding: 4px 10px;
-  margin: 0 10px;
-}
-
 .swiper-slide-count .count-slash,
 .btns__controls .swiper-button-play.pause::after {
   color: rgba(255, 255, 255, 0.8);
@@ -179,6 +175,7 @@
   align-items: center;
 }
 
+/* btn style setting */
 .btns__bot > * {
   color: rgba(255, 255, 255, 0.9);
   display: block;
@@ -189,17 +186,20 @@
   overflow: hidden;
 }
 
+/* count point style */
 .count-total-msg b,
 .swiper-slide-count .count-current {
   color: rgba(11, 220, 146, 0.9);
   font-weight: 700;
 }
 
+/* btnanimation setting */
 .btns__bot i {
   position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
+/* hover animation */
 .btns__bot i:hover {
   transform: rotate(180deg);
 }

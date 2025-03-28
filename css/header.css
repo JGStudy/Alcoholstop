@@ -1,13 +1,14 @@
 /* 혜련 CSS시작 */
 /* 헤더 전체 스타일 */
 .header_top {
+  margin: 0 auto;
   position: relative;
   display: flex;
-  width: 100%;
+  width: 98%;
   max-width: 1500px;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
 }
+
 .header_top button {
   background: none;
   border: none;
@@ -15,15 +16,30 @@
   font-weight: bold;
 }
 
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* 부모의 가운데 기준 */
+  transform: translateX(-50%); /* 가운데 기준에서 왼쪽으로 밀어서 정렬 */
+  width: 100vw; /* 뷰포트 전체 너비 */
+  height: 1px;
+  background-color: lightgray;
+}
 /*화살표 가상요소*/
 .select_btn span::after {
-  content: '▲';
+  content: '▼';
+  transition: 0.5s ease;
   margin-left: 70px;
   font-size: 12px;
+}
+.select_btn.active span::after {
+  content: '▲';
+  transition: all 0.5s ease;
 }
 .select_btn span {
   white-space: nowrap; /*두 줄로 되는거 방지*/
 }
+
 .top_link {
   display: flex;
   position: relative;
@@ -54,7 +70,7 @@
   font-size: smaller;
 }
 .top_instit ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -77,7 +93,7 @@
 /* 항상 호버 효과 유지 */
 
 #on a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -178,6 +194,7 @@
 /* 혜련 CSS끝 */
 
 /* 하연 파트 start */
+/* utility setting */
 .blind {
   visibility: hidden;
   overflow: hidden;
@@ -190,6 +207,12 @@
   line-height: 0;
 }
 
+/* 뒷배경 스크롤 막기 */
+.scrollFixed {
+  overflow: hidden;
+}
+
+/* layout setting */
 #menuAll {
   position: fixed;
   top: 0;
@@ -203,47 +226,9 @@
   transition: all 0.35s ease;
 }
 
-/* js 클릭 이벤트 */
-#menuAll.open {
-  height: 100%;
-  visibility: visible;
-  opacity: 1;
-}
-
-/* 뒷배경 스크롤 막기 */
-.scrollFixed {
-  overflow: hidden;
-}
-
-.burger {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  /* 윤민 css 참고 예정 */
-}
-
 .menu__toggle-close {
   margin-left: auto;
   padding-right: 15px;
-}
-
-.burger-x {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  transition: transform 0.3s ease-in-out;
-}
-
-.burger-x::before {
-  display: block;
-  content: '\e9af';
-  font-family: 'xeicon';
-  font-weight: normal;
-  font-size: 2rem;
-}
-
-.burger-x:hover {
-  transform: rotate(180deg);
 }
 
 .burger__wrap {
@@ -273,14 +258,43 @@
   position: relative;
 }
 
+.lnb-list {
+  position: relative;
+  margin: 0 1rem;
+}
+
+/* item style setting */
 .nav__gnb .gnb__item > a {
   cursor: default;
   font-weight: 700;
   padding: 0.8rem 1rem;
 }
 
+.nav__lnb .lnb__item > a {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.lnb-list .list__item::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  margin-left: -0.5rem;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e01f27;
+}
+
+.lnb-list .list__item {
+  color: #757575;
+  padding: 0.1rem 1rem;
+}
+
 .nav__gnb .gnb__item > a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -290,40 +304,42 @@
   transition: all 0.25s ease-in-out;
 }
 
-.nav__gnb .gnb__item > a:hover::after {
-  width: 60%;
+/* 전체 메뉴 active -> js 클릭 이벤트 연결 */
+#menuAll.open {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
-.nav__lnb .lnb__item > a {
-  padding: 0.5rem 1rem;
-  border-radius: 1.5rem;
-  transition: all 0.25s ease-in-out;
+/* btn style 초기화 */
+.burger,
+.burger-x {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-x::before {
+  display: block;
+  content: "\e9af";
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+/* hover animation */
+.burger-x:hover {
+  transform: rotate(180deg);
+}
+
+.nav__gnb .gnb__item > a:hover::after {
+  width: 60%;
 }
 
 .nav__lnb .lnb__item > a:hover {
   background-color: #e01f27;
   color: #fff;
-}
-
-.lnb-list {
-  position: relative;
-  margin: 0 1rem;
-}
-
-.lnb-list .list__item::before {
-  position: absolute;
-  content: '';
-  width: 2px;
-  height: 2px;
-  margin-left: -0.5rem;
-  display: inline-block;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #e01f27;
-}
-ls .lnb-list .list__item {
-  color: #757575;
-  padding: 0.1rem 1rem;
 }
 
 .lnb-list .list__item:hover {
@@ -406,7 +422,7 @@ ls .lnb-list .list__item {
 
 /* ▼ 삼각형 포인터 */
 .global-dropdown::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -6px;
   left: var(--triangle-left, 50%);
@@ -478,8 +494,8 @@ ls .lnb-list .list__item {
 /* ▼ 햄버거 아이콘 (xeicon 사용 시) */
 .menu-toggle::before {
   display: block;
-  content: '\e91c';
-  font-family: 'xeicon';
+  content: "\e91c";
+  font-family: "xeicon";
   font-weight: normal;
   font-size: 1.5em;
 }
