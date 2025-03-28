@@ -64,7 +64,7 @@ body {
   margin: 0 auto;
 }
 
-/* 못생긴 애들 */
+/* 못생긴 메인 캐릭터들 */
 .character {
   background: url("../assets/images/campaign_character.png") no-repeat center;
   display: block;
@@ -78,8 +78,9 @@ body {
 }
 
 /* 반응형 */
-@media all and (max-width: 820px) {
-  #main {
+
+@media all and (max-width:820px){
+  #main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,6 +102,8 @@ body {
     width: 48%;
   }
 }
+
+
 
 /* 상은 파트 */
 
