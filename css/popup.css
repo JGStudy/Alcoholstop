@@ -1,0 +1,214 @@
+/* font(pretendard) import */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+/* popup layout setting */
+#popup {
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  min-width: 350px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(20, 30, 55, 0.9);
+  box-shadow: 0 4px 20px 10px rgba(20, 30, 55, 0.25);
+  opacity: 0;
+  z-index: 1010;
+  transform: translateX(100%);
+  transition: all 0.5s linear;
+}
+
+/* popup active(show) style */
+#popup.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* font style */
+.popup_wrap * {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #fff;
+}
+
+/* popup inner container layout setting */
+.popup_wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* popup title style setting */
+.popup__title {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 2rem auto;
+  font-size: 1.5rem;
+}
+
+/* btn 초기화 */
+.popup-button,
+.btns__controls button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-button::before {
+  display: block;
+  content: "\e921";
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+/* btn hover animation */
+.popup-button:hover {
+  transform: rotate(180deg);
+}
+
+/* swiper.js style setting */
+
+.popup__swiper {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 하단 버튼 관련 style setting */
+.popup__swiper_btns {
+  width: 100%;
+}
+/* 1. swiper-slide 제어 버튼 */
+.btns__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.btns__controls button,
+.swiper-slide {
+  display: inline-block;
+  padding: 4px 10px;
+}
+
+.btns__controls button::after {
+  margin: 0 10px;
+  display: block;
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.btns__controls .swiper-button-prev::after {
+  content: "\e93b";
+}
+
+.btns__controls .swiper-button-next::after {
+  content: "\e93e";
+}
+
+.btns__controls .swiper-button-play.pause::after {
+  content: "\ea3b";
+}
+
+.btns__controls .swiper-button-play.play::after {
+  content: "\ea3e";
+}
+
+.swiper-slide-count .count-slash,
+.btns__controls .swiper-button-play.pause::after {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 2. popup 닫기 관련 버튼 */
+.btns__bot {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* btn style setting */
+.btns__bot > * {
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  padding: 1rem;
+  background-color: #0e1a27;
+  border-radius: 20rem;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+/* count point style */
+.count-total-msg b,
+.swiper-slide-count .count-current {
+  color: rgba(11, 220, 146, 0.9);
+  font-weight: 700;
+}
+
+/* btnanimation setting */
+.btns__bot i {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* hover animation */
+.btns__bot i:hover {
+  transform: rotate(180deg);
+}
+
+.btns__bot i::after {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  content: "\e921";
+  font-family: "xeicon";
+  font-weight: normal;
+  font-size: 1rem;
+}

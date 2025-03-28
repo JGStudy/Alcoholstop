@@ -1,0 +1,66 @@
+/* 푸터 전체 스타일 */
+footer {
+  background-color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+/* 푸터 내부 컨텐츠 */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 푸터 링크 스타일 */
+.footer-links {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: #333; /* 기본 글자 색상 */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.footer-links .personal-link {
+  color: #ef5407;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #007bff; /* 링크 호버 시 파란색 */
+}
+
+/* 웹사이트 선택 드롭다운 */
+#website-select {
+  bottom: 20%;
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* 푸터 로고와 텍스트 */
+.footer-address {
+  display: flex;
+  justify-content: center;
+}
+.footer-address p {
+  margin-top: 3%;
+  text-align: left;
+}
+
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

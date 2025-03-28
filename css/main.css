@@ -1,0 +1,504 @@
+/* 려린 파트 */
+/* center */
+body {
+  overflow-x: hidden;
+}
+.wrap {
+  background-color: #dae9f5;
+}
+
+#main::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 200%;
+  height: 100%;
+  background: url("../assets/images/bg.jpg") no-repeat center;
+  transform: translateX(-50%);
+  content: "";
+  background-size: cover;
+}
+
+.main_left,
+.main_right,
+.box {
+  position: relative;
+  z-index: 1;
+}
+
+/* 흰 박스 */
+.box {
+  text-align: center;
+  border: 7px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  /* width:600px; */
+  width: 29.4%;
+  /* min-height: 520px; */
+  height: 558px;
+  /* margin: auto; */
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 95px 25px 25px 25px;
+  justify-content: space-between;
+}
+/* 리스타트 */
+
+.box h2 img {
+  /* display: block; */
+  /* margin-block-start: 1em; */
+  /* margin-block-end: 1em; */
+  /* margin-inline-start: 0px; */
+  /* margin-inline-end: 0px; */
+  /* unicode-bidi: isolate; */
+  /* margin: 0px 0px 47px; */
+  margin-bottom: 50px;
+}
+
+/* 안전 시작 */
+.box2 p img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 못생긴 메인 캐릭터들 */
+.character {
+  background: url("../assets/images/campaign_character.png") no-repeat center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 200%;
+  height: 60%;
+  transform: translateX(-50%);
+  /* bottom:0; */
+  z-index: 2;
+}
+
+/* 반응형 */
+
+@media all and (max-width: 820px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    order: 1;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  #main .main_left {
+    order: 2;
+    width: 98%;
+    margin-top: 20rem;
+  }
+  #main .main_right {
+    order: 3;
+    width: 98%;
+  }
+}
+
+/* 상은 파트 */
+/* 메인 영역 */
+#main {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  width: 98%;
+  display: flex;
+  justify-content: space-around; /* 요소 균등하게 정렬 */
+  gap: 1rem; /* 요소 간 간격 */
+  padding-bottom: 230px;
+}
+
+/* 좌측 컨텐츠 영역 */
+.main_left {
+  width: 34%;
+  display: block;
+  text-align: center;
+}
+
+/* 최신 자료 영역 */
+.main_latest-data {
+  background-color: white;
+  height: 403px;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 17px;
+  border-radius: 20px;
+}
+
+/* 제목 스타일 */
+.main_subject {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* 최신 자료 아이콘 */
+.main_icon {
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  margin-right: 15px;
+  background-image: url(../assets/images/red_comma.png);
+  vertical-align: middle;
+}
+
+/* 최신 자료 리스트 */
+.main_data-list {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄 표시 */
+  justify-content: space-between;
+}
+
+/* 리스트 항목 스타일 */
+.main_data-list > li {
+  flex: 1 1 45%;
+  padding: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 최신 자료 링크 스타일 */
+.main_data-list > li > a {
+  display: block;
+  position: relative;
+  padding: 25px 18px 21px;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* 링크 hover 효과 */
+.main_data-list a:hover {
+  text-decoration: underline;
+}
+
+/* 자료 카테고리 스타일 */
+.main_category {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  color: #69758e;
+  line-height: 1.1;
+}
+
+/* 자료 제목 스타일 */
+.main_data-title {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; /* 긴 텍스트 줄임 */
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 19px;
+  color: #464646;
+  letter-spacing: -0.05em;
+}
+
+/* 날짜 스타일 */
+.main_date {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8d8d8d;
+  line-height: 1.1;
+}
+
+/* 절주 전문 인력 양성과정 링크 */
+.main_alchol-edu-link {
+  background-color: #7862bf;
+  display: block;
+  text-align: left;
+  position: relative;
+  padding: 22.5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #fff;
+  word-break: keep-all;
+}
+
+/* 절주 전문 인력 양성과정 제목 스타일 */
+.main_alchol-edu-link > .main_subject {
+  font-size: 19.8px;
+  line-height: 28.8px;
+  font-weight: bold;
+}
+
+/* 서브 제목 스타일 */
+.main_subject > span {
+  display: block;
+  font-weight: normal;
+}
+
+/* 절주 전문 인력 양성과정 아이콘 효과 */
+.main_alchol-edu-link > .main_subject::after {
+  display: block;
+  content: "\e90b";
+  font-family: "xeicon";
+  font-size: 16.2px;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 18px;
+  transition: transform 0.3s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+/* hover 시 아이콘 이동 효과 */
+.main_alchol-edu-link:hover .main_subject::after,
+.main_alchol-edu-link:focus .main_subject:after {
+  transform: translateX(10px);
+}
+
+/* 절주 전문 인력 양성과정 이미지 */
+.main_alchol-edu-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  background: url(../assets/images/bg_antialcoholism2.png) no-repeat right
+    center;
+  width: 150px;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+/* 윤지 파트 */
+/* 소통 영역 */
+.main_right {
+  width: 34%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.communication {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 17px;
+  box-sizing: border-box;
+  height: 403px;
+  overflow: hidden;
+}
+
+.communication__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.communication__icon {
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  margin-right: 15px;
+  background-image: url(../assets/images/blue_comma.png);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+/* 탭 영역 */
+.communication__tabs {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.communication__tabs-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.communication__tabs-item {
+  /* display: block; */
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: #333;
+  font-weight: 400;
+}
+
+.communication__tabs-item:hover {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: #3a6dd5;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.communication__tabs-item--active {
+  color: #3a6dd5;
+  font-weight: 700;
+}
+
+.communication__tabs-item--more {
+  font-size: 15px;
+  margin-left: auto;
+}
+
+.communication__content {
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.xi-plus-min {
+  font-size: 0.9rem;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* 대표 뉴스 */
+.communication__main-news {
+  border-radius: 12px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.communication__panel {
+  display: none;
+}
+.communication__panel--active {
+  display: block;
+}
+
+.communication__headline {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.communication__desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+
+.communication__date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.communication__link:hover .communication__headline,
+.communication__link:hover .communication__desc {
+  text-decoration: underline;
+}
+
+/* 서브 뉴스 */
+.communication__sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.communication__sub-item {
+  border-top: 1px dashed #ddd;
+  padding-top: 0.5rem;
+}
+
+.communication__sub-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.communication__text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.communication__sub-link:hover .communication__text {
+  text-decoration: underline;
+}
+
+.communication__sub-link:hover .communication__date {
+  text-decoration: none;
+}
+
+/* 주요사업 영역*/
+.business {
+  background-color: #0683b7;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.business__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.business__item {
+  flex: 1 1 20%;
+  max-width: 20%;
+  text-align: center;
+  color: white;
+}
+
+.business__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.business__link:hover .business__text {
+  text-decoration: underline;
+}
+
+.business__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.business__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  word-break: keep-all;
+}
