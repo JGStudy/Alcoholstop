@@ -27,13 +27,19 @@
 }
 /*화살표 가상요소*/
 .select_btn span::after {
-  content: "▲";
+  content: '▼';
+  transition: 0.5s ease;
   margin-left: 70px;
   font-size: 12px;
+}
+.select_btn.active span::after {
+  content: '▲';
+  transition: all 0.5s ease;
 }
 .select_btn span {
   white-space: nowrap; /*두 줄로 되는거 방지*/
 }
+
 .top_link {
   display: flex;
   position: relative;
