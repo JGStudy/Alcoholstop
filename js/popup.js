@@ -87,7 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalSlides = swiper.slides.length;
     document.querySelector(".count-current").textContent = currentSlide;
     document.querySelector(".count-total").textContent = totalSlides;
+    document.querySelector(".total").textContent = totalSlides;
   }
+
   // 이벤트 정의
   // 1. 자동재생 관련 버튼 클릭 이벤트
   const autoPlayBtn = document.querySelector(".swiper-button-play");
