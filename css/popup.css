@@ -84,7 +84,8 @@
 .popup__swiper {
   width: 60%;
   margin: 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
+  display: block;
 }
 
 .swiper-wrapper {
@@ -136,10 +137,10 @@
 .swiper-slide {
   display: inline-block;
   padding: 4px 10px;
-  margin: 0 10px;
 }
 
 .btns__controls button::after {
+  margin: 0 10px;
   display: block;
   font-family: "xeicon";
   font-weight: normal;
