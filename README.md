@@ -57,7 +57,7 @@
 | 🥕사윤민 | Header | [@saym010116](https://github.com/saym010116) |
 | 🦕조혜련 | Header | [@HyeEmpathyDev](https://github.com/HyeEmpathyDev) |
 | 🐰김려린 | Main | [@ryeorin](https://github.com/ryeorin) |
-| 🥊김윤지 [팀장] | Main | [@yunjikim](https://github.com/yunjikim) |
+| 🥊김윤지 [팀장] | Main | [@kkamisister](https://github.com/kkamisister) |
 | 🐶유상은 | Main | [@sangeune](https://github.com/sangeune) |
 | 🕊️황선주 | Footer | [@seonju21](https://github.com/seonju21) |
 
