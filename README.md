@@ -194,11 +194,11 @@
 
 ##### 📌 메인 페이지 (기본)
 > 기본 메인 페이지  
-<img src="https://github.com/user-attachments/assets/104855ad-dfea-4b6f-9482-cdefca0a6441" width="400"/>
+<img src="https://github.com/user-attachments/assets/104855ad-dfea-4b6f-9482-cdefca0a6441" width="500"/>
 
 ##### 📌 메뉴 확장 상태
 > 드롭다운 메뉴 활성화  
-<img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" height="1000"/>
+<img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" width="500"/>
 
 ---
 
@@ -211,7 +211,7 @@
 
 ##### 📌 기본 메인 페이지 팝업 구현
 > 쿠키 확인 후 팝업 확장
-<img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="400"/>
+<img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="500"/>
 
 ##### 📌 헤더 메뉴별 js 적용
 > 기관 메뉴 드롭다운
@@ -221,11 +221,13 @@
 <img src="https://github.com/user-attachments/assets/846a1da4-3c7b-40be-a716-51b0277944fd" width="800"/>
 
 > 햄버거 메뉴 확장
-<img src="https://github.com/user-attachments/assets/0f050991-0ad8-461e-a150-7059b4e64236" width="400"/>
+<img src="https://github.com/user-attachments/assets/0f050991-0ad8-461e-a150-7059b4e64236" width="500"/>
 
 ##### 📌 전체 레이아웃 반응형 구현
 > 화면 너비에 따라 반응형 구현
-<img src="https://github.com/user-attachments/assets/66d813fd-8c7f-429c-925e-bf06e7f6a8a7" width="400"/>
+<img src="https://github.com/user-attachments/assets/95771460-95c0-42b2-a1bb-b93df106887c" height="500"/>
+<img src="https://github.com/user-attachments/assets/e10c5d37-2580-4e13-b3bc-196ce65dfe26" height="500"/>
+
 
 ---
 
@@ -235,37 +237,37 @@
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/d3132942-053e-4009-b2e2-023f8634df64" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="400" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/d3132942-053e-4009-b2e2-023f8634df64" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="500" alt="클론코딩 결과"/> |
 
 ### 🔹 헤더 ~ 메인 페이지
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/d99e20a8-fbe1-4858-a737-c7ee3b13790e" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/5d8669a2-f2eb-4340-a336-cb808f726e2d" width="400" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/d99e20a8-fbe1-4858-a737-c7ee3b13790e" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/5d8669a2-f2eb-4340-a336-cb808f726e2d" width="500" alt="클론코딩 결과"/> |
 
 ### 🔹 헤더 햄버거 메뉴 open
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/6059c25b-314f-4482-8284-3bc498feb7ab" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/51f561bb-a331-45a0-b540-8b7a200c5ba9" width="400" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/6059c25b-314f-4482-8284-3bc498feb7ab" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/51f561bb-a331-45a0-b540-8b7a200c5ba9" width="500" alt="클론코딩 결과"/> |
 
 ### 🔹 헤더 메뉴 드롭다운
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/b74ebe39-927d-4bd1-b6e9-00b7aa074d97" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/f7419354-3ab0-4762-997e-27017140b6a4" width="400" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/b74ebe39-927d-4bd1-b6e9-00b7aa074d97" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/f7419354-3ab0-4762-997e-27017140b6a4" width="500" alt="클론코딩 결과"/> |
 
 ### 🔹 헤더 기관 메뉴 드롭다운
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/1cdf7d61-6609-4f60-b344-ce98f32b1519" height="350" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/67d9926e-c882-40f5-bc4c-2f72fb25f5ab" height="350" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/1cdf7d61-6609-4f60-b344-ce98f32b1519" width="300" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/67d9926e-c882-40f5-bc4c-2f72fb25f5ab" width="300" alt="클론코딩 결과"/> |
 
 ### 🔹 푸터 웹사이트 바로가기 드롭다운
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/21a3c9e6-0816-434f-bc58-48cc145fb26f" height="350" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/04730065-6dfb-4a1f-b3d4-a45ff7e465f8" height="350" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/21a3c9e6-0816-434f-bc58-48cc145fb26f" width="300" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/04730065-6dfb-4a1f-b3d4-a45ff7e465f8" width="300" alt="클론코딩 결과"/> |
 
 ---
 
