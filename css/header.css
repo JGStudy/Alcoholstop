@@ -70,7 +70,7 @@
   font-size: smaller;
 }
 .top_instit ul li a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -93,7 +93,7 @@
 /* 항상 호버 효과 유지 */
 
 #on a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -278,7 +278,7 @@
 
 .lnb-list .list__item::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 2px;
   height: 2px;
   margin-left: -0.5rem;
@@ -294,7 +294,7 @@
 }
 
 .nav__gnb .gnb__item > a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -322,8 +322,8 @@
 
 .burger-x::before {
   display: block;
-  content: "\e9af";
-  font-family: "xeicon";
+  content: '\e9af';
+  font-family: 'xeicon';
   font-weight: normal;
   font-size: 2rem;
 }
@@ -353,6 +353,7 @@
   max-width: 1500px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .header-container {
@@ -422,7 +423,7 @@
 
 /* ▼ 삼각형 포인터 */
 .global-dropdown::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -6px;
   left: var(--triangle-left, 50%);
@@ -494,8 +495,8 @@
 /* ▼ 햄버거 아이콘 (xeicon 사용 시) */
 .menu-toggle::before {
   display: block;
-  content: "\e91c";
-  font-family: "xeicon";
+  content: '\e91c';
+  font-family: 'xeicon';
   font-weight: normal;
   font-size: 1.5em;
 }
