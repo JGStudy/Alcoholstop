@@ -48,18 +48,18 @@
 
 ### 진짜 기깔난 스터디 (진기스) 
 > 멋진 절주온 클론코딩 프로젝트를 함께한 팀원들을 소개합니다.
-
-🔗 팀 Notion : https://www.notion.so/KB-1ae8e00bf3c680589974dea284901f44
+>
+> 🔗 [팀 Notion](https://www.notion.so/KB-1ae8e00bf3c680589974dea284901f44) | 🔗 [팀 Github](https://github.com/JGStudy)
 
 | 이름 | 역할 | GitHub |
 |------|------|--------|
-| 🔧김하연 | Header, 팝업 | [@hayeon-git](https://github.com/hayeon-git) |
-| 🥕사윤민 | Header | [@carrot-sayoon](https://github.com/carrot-sayoon) |
-| 🦕조혜련 | Header | [@hyeryeoncho](https://github.com/hyeryeoncho) |
-| 🐰김려린 | Main | [@ryeonrabbit](https://github.com/ryeonrabbit) |
+| 🔧김하연 | Header, 팝업 | [@rlaxhfn](https://github.com/rlaxhfn) |
+| 🥕사윤민 | Header | [@saym010116](https://github.com/saym010116) |
+| 🦕조혜련 | Header | [@HyeEmpathyDev](https://github.com/HyeEmpathyDev) |
+| 🐰김려린 | Main | [@ryeorin](https://github.com/ryeorin) |
 | 🥊김윤지 [팀장] | Main | [@yunjikim](https://github.com/yunjikim) |
-| 🐶유상은 | Main | [@sangeun-dev](https://github.com/sangeun-dev) |
-| 🕊️황선주 | Footer | [@sunju-hwang](https://github.com/sunju-hwang) |
+| 🐶유상은 | Main | [@sangeune](https://github.com/sangeune) |
+| 🕊️황선주 | Footer | [@seonju21](https://github.com/seonju21) |
 
 ---
 
@@ -198,37 +198,74 @@
 
 ##### 📌 메뉴 확장 상태
 > 드롭다운 메뉴 활성화  
-<img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" width="400"/>
+<img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" height="1000"/>
 
 ---
 
-### 🚧 2차 DUE : **3월 27일**
+### 🚧 2차 DUE : **3월 28일**
 - 미디어쿼리 반응형 적용
 - JavaScript 기능 구현
 - 팝업 인터랙션 및 세부 디자인 보완  
 
 ### 📸 결과
 
-##### 📌 ooo
-> ooo  
-<img src="https://github.com/user-attachments/assets/104855ad-dfea-4b6f-9482-cdefca0a6441" width="400"/>
+##### 📌 기본 메인 페이지 팝업 구현
+> 쿠키 확인 후 팝업 확장
+<img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="400"/>
 
-##### 📌 xxx
-> xxx  
-<img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" width="400"/>
+##### 📌 헤더 메뉴별 js 적용
+> 기관 메뉴 드롭다운
+<img src="https://github.com/user-attachments/assets/c855761f-a7d6-4b62-9d8d-29ae5f816152" height="350"/>
+
+> 메인 메뉴 드롭다운
+<img src="https://github.com/user-attachments/assets/846a1da4-3c7b-40be-a716-51b0277944fd" width="800"/>
+
+> 햄버거 메뉴 확장
+<img src="https://github.com/user-attachments/assets/0f050991-0ad8-461e-a150-7059b4e64236" width="400"/>
+
+##### 📌 전체 레이아웃 반응형 구현
+> 화면 너비에 따라 반응형 구현
+<img src="https://github.com/user-attachments/assets/66d813fd-8c7f-429c-925e-bf06e7f6a8a7" width="400"/>
 
 ---
 
 ## 📸 최종 구현 결과 비교
 
-### 🔹 ooo 영역
+### 🔹 기본 메인 페이지 팝업 구현
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/70c4dcb9-6049-4e58-9c04-baf587cf7195" width="400" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/d3132942-053e-4009-b2e2-023f8634df64" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="400" alt="클론코딩 결과"/> |
 
-> ✅ ooo  
-> 💡 ooo
+### 🔹 헤더 ~ 메인 페이지
+
+| 원본 사이트 | 클론코딩 결과 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/d99e20a8-fbe1-4858-a737-c7ee3b13790e" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/5d8669a2-f2eb-4340-a336-cb808f726e2d" width="400" alt="클론코딩 결과"/> |
+
+### 🔹 헤더 햄버거 메뉴 open
+
+| 원본 사이트 | 클론코딩 결과 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/6059c25b-314f-4482-8284-3bc498feb7ab" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/51f561bb-a331-45a0-b540-8b7a200c5ba9" width="400" alt="클론코딩 결과"/> |
+
+### 🔹 헤더 메뉴 드롭다운
+
+| 원본 사이트 | 클론코딩 결과 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/b74ebe39-927d-4bd1-b6e9-00b7aa074d97" width="400" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/f7419354-3ab0-4762-997e-27017140b6a4" width="400" alt="클론코딩 결과"/> |
+
+### 🔹 헤더 기관 메뉴 드롭다운
+
+| 원본 사이트 | 클론코딩 결과 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/1cdf7d61-6609-4f60-b344-ce98f32b1519" height="350" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/67d9926e-c882-40f5-bc4c-2f72fb25f5ab" height="350" alt="클론코딩 결과"/> |
+
+### 🔹 푸터 웹사이트 바로가기 드롭다운
+
+| 원본 사이트 | 클론코딩 결과 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/21a3c9e6-0816-434f-bc58-48cc145fb26f" height="350" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/04730065-6dfb-4a1f-b3d4-a45ff7e465f8" height="350" alt="클론코딩 결과"/> |
 
 ---
 
