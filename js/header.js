@@ -6,6 +6,7 @@ const toggleSiteText = document.querySelectorAll('.top_instit li');
 
 toggleButton.addEventListener('click', () => {
   toggleSite.classList.toggle('active');
+  toggleButton.classList.toggle('active');
 });
 
 toggleButton.addEventListener('mouseover', () => {
