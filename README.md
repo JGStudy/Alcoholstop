@@ -225,8 +225,10 @@
 
 ##### 📌 전체 레이아웃 반응형 구현
 > 화면 너비에 따라 반응형 구현
-<img src="https://github.com/user-attachments/assets/95771460-95c0-42b2-a1bb-b93df106887c" height="400"/>
-<img src="https://github.com/user-attachments/assets/e10c5d37-2580-4e13-b3bc-196ce65dfe26" height="400"/>
+
+| width 821px 이상 | width 820px 이하 |
+|-------------|----------------|
+| <img src="https://github.com/user-attachments/assets/657fd9e4-c0b5-48d4-b3ff-576ced97765b" width="500"/> | <img src="https://github.com/user-attachments/assets/95771460-95c0-42b2-a1bb-b93df106887c" height="350"/><br><img src="https://github.com/user-attachments/assets/e10c5d37-2580-4e13-b3bc-196ce65dfe26" height="350"/> |
 
 
 ---
@@ -237,9 +239,9 @@
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
-| <img src="https://github.com/user-attachments/assets/d3132942-053e-4009-b2e2-023f8634df64" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/e29f7830-6551-4f70-bccc-ad8f7d7e3a11" width="500" alt="클론코딩 결과"/> |
+| <img src="https://github.com/user-attachments/assets/d3132942-053e-4009-b2e2-023f8634df64" width="500" alt="원본 이미지"/> | <img src="https://github.com/user-attachments/assets/98ec47e8-9d55-4714-8198-abc408934799" width="500" alt="클론코딩 결과"/> |
 
-### 🔹 헤더 ~ 메인 페이지
+### 🔹 메인 페이지
 
 | 원본 사이트 | 클론코딩 결과 |
 |-------------|----------------|
